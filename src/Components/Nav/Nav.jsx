@@ -10,15 +10,13 @@ const Nav = () => {
 							<img src={Brand} alt="logo" />
 						</div>
 						<div className="nav_menu">
-							<ul className="nav_link flex justify-around items-center xl:text-lg md:text-base">
+							<ul className="nav_link flex justify-around items-center">
 								{navLinks.map((link) => (
 									<li className="mx-4 my-1" key={link.id}>
 										<a href={link.link}>{link.name}</a>
 									</li>
 								))}
-								<button className="btn">
-									Get Started
-								</button>
+								<button className="btn">Get Started</button>
 							</ul>
 						</div>
 					</div>
