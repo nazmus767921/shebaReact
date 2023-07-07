@@ -12,7 +12,7 @@ const Test = () => {
 
 			{/* //! content Language change function test */}
 			<h2 className="text-2xl capitalize font-bold text-blue-700">
-				{Lang === false ? `${article.en}` : `${article.bn}`}
+				{Lang === false ? `${article[0].en}` : `${article[0].bn}`}
 			</h2>
 
 			{/* //? Set the button content according to the state */}
