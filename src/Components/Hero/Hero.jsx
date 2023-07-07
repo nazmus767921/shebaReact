@@ -8,7 +8,7 @@ const Hero = () => {
 					<div className="hero_content--wrapper flex">
 						<div className="hero_content flex flex-col basis-[65%]">
 							<h6 className="slogans">{tagLines.hero}</h6>
-							<h1 className="mt-5 mb-8">
+							<h1 className="mt-1 mb-3">
 								{heroSection.heroContent.title.seg1}
 								<br />
 								{heroSection.heroContent.title.seg2}
