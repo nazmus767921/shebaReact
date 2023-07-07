@@ -18,7 +18,7 @@ const Hero = () => {
 								</span>
 							</h1>
 							<p>{heroSection.heroContent.description}</p>
-							<button className="btn w-fit text-2xl my-12">Get Started</button>
+							<button className="btn w-fit text-xl my-12">Get Started</button>
 						</div>
 					</div>
 				</div>
