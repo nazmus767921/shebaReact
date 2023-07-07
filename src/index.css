@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Asar&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply m-0;
+		@apply font-['FreeSans_Medium'];
+	}
+
+	img {
+		@apply w-full h-auto max-w-[200em];
+	}
+
+	h1 {
+		@apply font-['FreeSans_Bold'] text-7xl capitalize leading-normal;
+	}
+
+	p {
+		@apply font-['asar'] xl:text-xl text-lg;
+	}
+
+	@font-face {
+		font-family: "FreeSans Medium";
+		font-style: normal;
+		font-weight: normal;
+		src: local("FreeSans Medium"),
+			url("./assets/fonts/FreeSans.woff") format("woff");
+	}
+	@font-face {
+		font-family: "FreeSans Bold";
+		font-style: normal;
+		font-weight: normal;
+		src: local("FreeSans Bold"),
+			url("./assets/fonts/FreeSansBold.woff") format("woff");
+	}
+}
+
+@layer components {
+	.container {
+		@apply max-w-[80%] mx-auto;
+	}
+
+	.btn {
+		@apply bg-black text-white px-8 py-4 font-bold border-0 hover:text-black hover:bg-white transition-all;
+	}
+}
