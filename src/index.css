@@ -20,7 +20,7 @@
 	}
 
 	p {
-		@apply font-['asar'] text-2xl leading-normal;
+		@apply font-['asar'] text-xl;
 	}
 
 	@font-face {
