@@ -16,7 +16,7 @@ const Nav = () => {
 						<div className="nav_logo flex items-center w-[17%]">
 							<img src={Brand} alt="logo" />
 						</div>
-						<div className="nav_menu lg:flex sm:hidden ">
+						<div className="nav_menu hidden md:flex ">
 							<ul className="nav_link flex justify-around items-center text-lg">
 								{navLinks.map((link) => (
 									<li className="mx-4 my-1" key={link.id}>
@@ -27,7 +27,7 @@ const Nav = () => {
 							</ul>
 						</div>
 						<div
-							className="nav_mobile lg:hidden"
+							className="nav_mobile flex md:hidden"
 							onClick={() => {
 								handleMobileMenu();
 							}}>
