@@ -19,7 +19,7 @@ const Test = () => {
 			<button
 				onClick={() => setLang((prev) => !prev)}
 				className="px-7 py-2 border-2 rounded-md">
-				{Lang === false ? "Change to Bangla" : "Change to English"}
+				{`Change to ${Lang === false ? "Bangla" : "English"}`}
 			</button>
 		</div>
 	);
