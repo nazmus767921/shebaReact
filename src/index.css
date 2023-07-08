@@ -23,6 +23,10 @@
 		@apply font-['asar'] text-xl;
 	}
 
+	.bn {
+		@apply font-['sutonnyomj'];
+	}
+
 	@font-face {
 		font-family: "FreeSans Medium";
 		font-style: normal;
@@ -36,6 +40,13 @@
 		font-weight: normal;
 		src: local("FreeSans Bold"),
 			url("./assets/fonts/FreeSansBold.woff") format("woff");
+	}
+	@font-face {
+		font-family: "sutonnyomj";
+		src: url("resources/font/SutonnyOMJunicode.ttf") format("truetype");
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
 	}
 }
 

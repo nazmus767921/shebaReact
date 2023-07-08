@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { article } from "./Content";
+import { offeringsMedicine } from "../../Constants/Constant";
 
 const Test = () => {
 	const [Lang, setLang] = useState(false);
+
 	return (
 		//! Title of the page
 		<div className="flex flex-col gap-10 justify-center h-screen items-center">
@@ -11,9 +12,13 @@ const Test = () => {
 			</h2>
 
 			{/* //! content Language change function test */}
-			<h2 className="text-2xl capitalize font-bold text-blue-700">
-				{Lang === false ? `${article[0].en}` : `${article[0].bn}`}
-			</h2>
+			<div className={Lang ? "bn" : "en"}>
+				<h2 className="text-2xl capitalize font-bold text-blue-700">
+					{Lang === false
+						? `${offeringsMedicine.en.title}`
+						: `${offeringsMedicine.bn.title}`}
+				</h2>
+			</div>
 
 			{/* //? Set the button content according to the state */}
 			<button
