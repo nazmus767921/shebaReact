@@ -16,11 +16,11 @@
 	}
 
 	h1 {
-		@apply font-['FreeSans_Bold'] text-7xl capitalize leading-normal;
+		@apply font-['FreeSans_Bold'] text-3xl capitalize leading-normal;
 	}
 
 	p {
-		@apply font-['asar'] text-xl;
+		@apply font-['asar'] text-md;
 	}
 
 	.bn {
@@ -43,7 +43,7 @@
 	}
 	@font-face {
 		font-family: "sutonnyomj";
-		src: url("resources/font/SutonnyOMJunicode.ttf") format("truetype");
+		src: url("./assets/fonts/SutonnyOMJ.ttf") format("truetype");
 		font-weight: 400;
 		font-style: normal;
 		font-display: swap;
@@ -56,6 +56,9 @@
 	}
 
 	.btn {
-		@apply bg-black text-white px-8 py-4 font-bold border-0 hover:text-black hover:bg-white transition-all;
+		@apply bg-black hover:bg-white transition-all;
+		@apply w-fit px-md py-4;
+		@apply text-white font-bold hover:text-black;
+		@apply border-0;
 	}
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { offeringsMedicine } from "../../Constants/Constant";
+import { treatmentCenterInfo } from "../../Constants/Constant";
 
 const Test = () => {
 	const [Lang, setLang] = useState(false);
@@ -15,8 +15,8 @@ const Test = () => {
 			<div className={Lang ? "bn" : "en"}>
 				<h2 className="text-2xl capitalize font-bold text-blue-700">
 					{Lang === false
-						? `${offeringsMedicine.en.title}`
-						: `${offeringsMedicine.bn.title}`}
+						? `${treatmentCenterInfo.en.title}`
+						: `${treatmentCenterInfo.bn.title}`}
 				</h2>
 			</div>
 

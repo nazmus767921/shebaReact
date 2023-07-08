@@ -1,5 +1,5 @@
 //!imports
-import { whatsapp } from "../assets/Images/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
+import whatsapp from "../assets/Images/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
 
 //! Navigation
 const navLinks = [

@@ -1,29 +1,32 @@
+//! Imports
 import { useState } from "react";
 import { navLinks } from "../../Constants/Constant";
 import { Brand, hamBurger } from "../../assets/Images/Img";
+import { Btn } from "../Button/Btn";
+
+//! Nav function
 const Nav = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
 
 	const handleMobileMenu = () => {
 		setMobileMenu((prev) => !prev);
 	};
-
 	return (
 		<>
 			<nav>
 				<div className="container">
-					<div className="nav_wrapper flex justify-between items-center my-11">
+					<div className="nav_wrapper flex justify-between items-center my-md">
 						<div className="nav_logo flex items-center w-[17%]">
 							<img src={Brand} alt="logo" />
 						</div>
 						<div className="nav_menu hidden md:flex ">
-							<ul className="nav_link flex justify-around items-center text-lg">
+							<ul className="nav_link flex justify-around items-center text-md">
 								{navLinks.map((link) => (
 									<li className="mx-4 my-1" key={link.id}>
 										<a href={link.link}>{link.name}</a>
 									</li>
 								))}
-								<button className="btn">Get Started</button>
+								<Btn name="Contact us" />
 							</ul>
 						</div>
 						<div
@@ -46,7 +49,7 @@ const Nav = () => {
 											<a href={link.link}>{link.name}</a>
 										</li>
 									))}
-									<button className="btn">Get Started</button>
+									<Btn name="Contact us" />
 								</ul>
 							</div>
 						</div>
@@ -56,5 +59,4 @@ const Nav = () => {
 		</>
 	);
 };
-
 export default Nav;
