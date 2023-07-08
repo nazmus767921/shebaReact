@@ -7,8 +7,8 @@ const Test = () => {
 	return (
 		//! Title of the page
 		<div className="flex flex-col gap-10 justify-center h-screen items-center">
-			<h2 className="text-6xl font-['FreeSans_Bold']">
-				<span className="text-red-500">Causion:</span> Testing is on!
+			<h2 className="text-3xl font-['FreeSans_Bold']">
+				<span className="text-brand">Causion:</span> Testing is on!
 			</h2>
 
 			{/* //! content Language change function test */}
