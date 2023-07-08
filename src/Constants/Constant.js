@@ -1,3 +1,6 @@
+//!imports
+import { whatsapp } from "../assets/Images/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
+
 //! Navigation
 const navLinks = [
 	{
@@ -108,6 +111,7 @@ const doctorInfo = {
 			1: "Cured 25000 + patients",
 			2: "22 years of experience",
 		},
+		phone: "01712 85 80 71",
 	},
 	bn: {
 		title:
@@ -118,7 +122,114 @@ const doctorInfo = {
 			1: "২৫ হাজার+ রোগী সুস্থ হয়েছে",
 			2: "২২ বছরের অভিজ্ঞতা সম্পন্ন",
 		},
+		phone: "০১৭১২- ৮৫ ৮০ ৭১",
 	},
+	links: {
+		icon: whatsapp,
+		link: "https://wa.me/8801712858071",
+	},
+};
+
+//! FAQs
+const Faqs = {
+	en: {
+		title: "What our patients are asking us?",
+		faq: [
+			{
+				question: "Is homeopathy safe during pregnanancy?",
+				answer:
+					"We can assure you that Homeopathy is completely safe. We use natural and safe sustances. So, it has no major side effects like other medicines.",
+			},
+			{
+				question: "Is homeopathy safe for babies?",
+				answer:
+					"Of course babies are safe from Homeopathic treatment. As, We stated before. We use natural and safe sustances. So, it has no major side effects like other medicines not even for babies.",
+			},
+			{
+				question: "Can homeopathy cure ED permanently?",
+				answer:
+					"Erectile dysfunction or difficulty in getting a firm erection or an erection during sexual activities can be cured by Homeopathy and has no side effects.That's why people are more moving towards it. Many patients come to us and get rid of ED and other sexual problems.",
+			},
+			{
+				question: "Does homeopathy increase symptoms?",
+				answer:
+					"Sometimes patient gets confused when they see that the symptoms are increased. But it also is a part of the process. But it is very rare.",
+			},
+			{
+				question: "why homeopathy works slow?",
+				answer:
+					"Great things takes time. Homeopathy focuses to cure you and give back your health fully. So, it is normal to take time. You have to give yourself time to get back your sound health.",
+			},
+		],
+	},
+};
+
+//! CTA Section
+const CtaContent = {
+	en: {
+		titleTop: "Don't delay any more",
+		titleBottom: "Get an appointment",
+		pitch:
+			"Call at any of the numbers below to talk directly with the doctor and to get appointment. Or E-mail us writing about your problem and questions. We will go through your messages and call you.",
+		endTag: "We will ensure that you receive the best care.",
+		phone: [
+			{
+				num: "+88 01912-74 00 68",
+			},
+			{
+				num: "+88 01731-67 29 67",
+			},
+		],
+		email: "shebahomoeohallkps @gmail.com",
+	},
+	bn: {
+		titleTop: "তবে দেরী কেন?",
+		titleBottom: "আজই যোগাযোগ করুন",
+		pitch:
+			"ডাক্তারের সাথে সরাসরি কথা বলার জন্য অথবা অন্যান্য তথ্যের জন্য নিচের যেকোনো নাম্বারে কল করুন। অথবা আপনার প্রশ্ন বা সমস্যার কথা লিখে মেইল করুন। আমারা আপনার মেসেজ পড়ে আপনাকে কল করবো।",
+		endTag: "আমরা নিশ্চিত করবো যাতে আপনি সর্বোত্তম সেবা পান।",
+	},
+};
+
+//! Address Section
+const addressSection = {
+	en: {
+		title: "Our Address",
+		address: {
+			street: "Lotapata Bazar",
+			city: "Kapasia, Gazipur",
+			district: "Dhaka",
+			postNo: "1730",
+		},
+	},
+	bn: {
+		title: "আমাদের ঠিকানা",
+		address: {
+			street: "লতাপাতা বাজার",
+			city: " কাপাসিয়া, গাজীপুর,",
+			district: "ঢাকা",
+			postNo: "১৭৩০",
+		},
+	},
+};
+
+//! Footer Section
+const footer = {
+	copyright: "Copyright © 2023 Sheba Homoe Hall. All Rights Reserved.",
+	links: [
+		{
+			title: "Homeopathy",
+			link: "https://yourLink.com",
+		},
+		{
+			title: "Naturopathy",
+			link: "https://yourLink.com",
+		},
+		{
+			title: "Other links",
+			link: "https://yourLink.com",
+		},
+	],
 };
 
 export {
@@ -129,4 +240,8 @@ export {
 	offeringsMedicine,
 	offeringsPitch,
 	doctorInfo,
+	Faqs,
+	CtaContent,
+	addressSection,
+	footer,
 };
