@@ -20,7 +20,7 @@
 	}
 
 	h2 {
-		@apply font-['FreeSans_Bold'] text-2xl leading-normal capitalize;
+		@apply font-['FreeSans_Bold'] text-[2.5em] tabetSm:text-2xl leading-normal;
 	}
 
 	p {
@@ -58,7 +58,7 @@
 
 @layer components {
 	.container {
-		@apply max-w-[80%] mx-auto;
+		@apply max-w-[90%] tabetSm:max-w-[80%] mx-auto;
 	}
 
 	.btn {

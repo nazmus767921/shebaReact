@@ -6,7 +6,7 @@ const Chamber = (props) => {
 	return (
 		<>
 			<div className="section">
-				<div className="container text-center">
+				<div className="container">
 					<div className="chamber_img_wrapper"></div>
 					<div className="chamber_content">
 						<p>{handleLanguage(chamberInfo.bn.tag, chamberInfo.en.tag)}</p>

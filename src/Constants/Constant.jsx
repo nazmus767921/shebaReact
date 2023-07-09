@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 //!imports
 import whatsapp from "../assets/Images/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
 
@@ -68,8 +69,8 @@ const chamberInfo = {
 		tag: "TREATMENT CENTER",
 		title: (
 			<>
-				Your <span className=" text-brand text-xl">only</span> reliable
-				treatment center to recover fully,
+				Your <span className=" text-brand text-xl">only</span> <br />
+				reliable treatment center to recover fully
 			</>
 		),
 		description:
