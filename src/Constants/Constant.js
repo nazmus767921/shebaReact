@@ -35,13 +35,24 @@ const tagLines = {
 //! Hero Section
 const heroSection = {
 	heroContent: {
-		title: {
-			seg1: "Restore Your Health And",
-			seg2: "Mind Naturally With",
-			seg3: "Homeopathy & Naturopathy", //? will be in green color.
+		en: {
+			title: {
+				seg1: "Restore Your Health And",
+				seg2: "Mind Naturally With",
+				seg3: "Homeopathy & Naturopathy", //? will be in green color.
+			},
+			description:
+				"Welcome to Sheba Homeo Hall, Your destination for effortless, reliable, and natural healthcare.",
 		},
-		description:
-			"Welcome to Sheba Homeo Hall, Your destination for effortless, reliable, and natural healthcare.",
+		bn: {
+			title: {
+				seg1: "মাধ্যমে প্রাকৃতিকভাবে আপনার",
+				seg2: "স্বাস্থ্য, মন এবং শরীর ফিরে পান",
+				seg3: "হোমিওপ্যাথি ও ন্যাচারোপ্যাথির", //? will be in green color.
+			},
+			description:
+				"সেবা হোমিও হলে আপনাকে স্বাগতম, আপনার স্বাস্থ্যসেবার নির্ভরযোগ্য এবং প্রাকৃতিক গন্তব্য।",
+		},
 	},
 };
 

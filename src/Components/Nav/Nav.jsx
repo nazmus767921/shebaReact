@@ -4,7 +4,8 @@ import { navLinks } from "../../Constants/Constant";
 import { Times, brandLogo, hamBurger } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 
-const Nav = () => {
+const Nav = (props) => {
+	const { setBangla } = props;
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
@@ -34,7 +35,9 @@ const Nav = () => {
 									<a href={links.link}>{links.linkText}</a>
 								</li>
 							))}
-							<div className="px-12 pt-12 text-xl">
+							<div
+								className="px-12 pt-12 text-xl"
+								onClick={() => setBangla((prev) => !prev)}>
 								<Btn name="See in Bangla" />
 							</div>
 						</div>

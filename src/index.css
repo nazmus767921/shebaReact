@@ -16,11 +16,13 @@
 	}
 
 	h1 {
-		@apply font-['FreeSans_Bold'] text-3xl capitalize leading-normal;
+		@apply font-['FreeSans_Bold'] text-2xl desktopSm:text-3xl capitalize leading-normal;
 	}
 
 	p {
-		@apply font-['asar'] text-md;
+		@apply font-['asar'];
+		@apply text-xl tablet:text-md;
+		@apply leading-loose;
 	}
 
 	.bn {
@@ -60,5 +62,10 @@
 		@apply w-fit px-md py-4;
 		@apply text-white font-bold hover:text-black;
 		@apply border-0;
+	}
+
+	.tagLine {
+		@apply font-['FreeSans_Medium'] text-md;
+		@apply leading-snug;
 	}
 }
