@@ -1,4 +1,5 @@
-import { chamberInfo, tagLines } from "../../Constants/Constant";
+/* eslint-disable react/prop-types */
+import { chamberInfo } from "../../Constants/Constant";
 
 const Chamber = (props) => {
 	const { handleLanguage } = props;
