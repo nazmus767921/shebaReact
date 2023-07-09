@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 //! Imports
 import { useState } from "react";
 import { navLinks } from "../../Constants/Constant";
