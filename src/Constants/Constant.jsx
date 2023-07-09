@@ -66,7 +66,12 @@ const heroSection = {
 const chamberInfo = {
 	en: {
 		tag: "TREATMENT CENTER",
-		title: "Your only reliable treatment center to recover fully",
+		title: (
+			<>
+				Your <span className=" text-brand text-xl">only</span> reliable
+				treatment center to recover fully,
+			</>
+		),
 		description:
 			"Welcome to Sheba Homeo Hall, your destination for effortless, reliable, and natural healthcare.Whether you're dealing with acute or chronic conditions, trust Sheba Homeo Hall for optimal health and well-being. Say goodbye to chronic diseases, allergies, skin problems, and mental disorders with our holistic approach to healing. We have fame for curing a variety of patients like you with complex and chronic diseases with a success rate of 97% all over the country and abroad.we believe in the power of homeopathy to restore your well-being naturally.",
 	},
