@@ -19,6 +19,10 @@
 		@apply font-['FreeSans_Bold'] text-2xl desktopSm:text-3xl capitalize leading-normal;
 	}
 
+	h2 {
+		@apply font-['FreeSans_Bold'] text-2xl leading-normal capitalize;
+	}
+
 	p {
 		@apply font-['asar'];
 		@apply text-xl tablet:text-md;
