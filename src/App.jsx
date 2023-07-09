@@ -9,7 +9,7 @@ function App() {
 	const [isBangla, setBangla] = useState(false);
 	return (
 		<>
-			<Nav setBangla={setBangla} />
+			<Nav setBangla={setBangla} isBangla={isBangla} />
 			<Hero isBangla={isBangla} />{" "}
 			{/* for now its using props to pass isBangla to the component,
 			but rewrite the code and use contextAPI instead */}

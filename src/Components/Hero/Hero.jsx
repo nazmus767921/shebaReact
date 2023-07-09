@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
+//! Imports
 import { heroSection, tagLines } from "../../Constants/Constant";
 import { heroLeaf } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 
+//! Default Function
 const Hero = (props) => {
+	//! Props destructuring
 	const { isBangla } = props;
 
-	const handleTranslate = (bangla, english) => {
+	//! This helps to define bangla and english content in jsx And keeps the code clean.
+	const handleLanguage = (bangla, english) => {
 		return isBangla ? bangla : english;
 	};
 	return (
@@ -22,25 +26,25 @@ const Hero = (props) => {
 						</div>
 						<p className="tagLine">{tagLines.hero}</p>
 						<h1 className="mb-4">
-							{handleTranslate(
+							{handleLanguage(
 								heroSection.heroContent.bn.title.seg3,
 								heroSection.heroContent.en.title.seg1
 							)}
 							<br />
-							{handleTranslate(
+							{handleLanguage(
 								heroSection.heroContent.bn.title.seg1,
 								heroSection.heroContent.en.title.seg2
 							)}
 							<br />
 							<span className="text-brand">
-								{handleTranslate(
+								{handleLanguage(
 									heroSection.heroContent.bn.title.seg2,
 									heroSection.heroContent.en.title.seg3
 								)}
 							</span>
 						</h1>
 						<p>
-							{handleTranslate(
+							{handleLanguage(
 								heroSection.heroContent.bn.description,
 								heroSection.heroContent.en.description
 							)}

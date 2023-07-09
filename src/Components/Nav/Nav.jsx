@@ -5,7 +5,7 @@ import { Times, brandLogo, hamBurger } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 
 const Nav = (props) => {
-	const { setBangla } = props;
+	const { setBangla, isBangla } = props;
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
@@ -27,7 +27,7 @@ const Nav = (props) => {
 						<div
 							className={`${
 								isOpen === true ? `flex` : `hidden`
-							} absolute top-0 right-0 z-40 bg-white border-l-2 rounded-md  min-w-[80%] min-h-screen flex-col pt-10`}>
+							} absolute top-0 right-0 z-40 bg-white border-l-2 rounded-md  min-w-screen min-h-screen flex-col pt-10`}>
 							{navLinks.map((links) => (
 								<li
 									className="list-none text-xl py-9 px-8 hover:text-brand hover:ring-2 transition-all"
@@ -38,7 +38,7 @@ const Nav = (props) => {
 							<div
 								className="px-12 pt-12 text-xl"
 								onClick={() => setBangla((prev) => !prev)}>
-								<Btn name="See in Bangla" />
+								<Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} />
 							</div>
 						</div>
 					</div>
@@ -51,7 +51,10 @@ const Nav = (props) => {
 									<a href={links.link}>{links.linkText}</a>
 								</li>
 							))}
-							<Btn name="See in Bangla" />
+							<div onClick={() => setBangla((prev) => !prev)}>
+								<Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} />
+							</div>
+							{/* <Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} /> */}
 						</ul>
 					</div>
 				</div>
