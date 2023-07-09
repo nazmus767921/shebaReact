@@ -72,4 +72,9 @@
 		@apply font-['FreeSans_Medium'] text-md;
 		@apply leading-snug;
 	}
+
+	.horizontal_line {
+		@apply w-full h-[3px];
+		@apply bg-brand;
+	}
 }

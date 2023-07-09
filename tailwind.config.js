@@ -48,6 +48,7 @@ const config = {
 				md: "3.125rem",
 				lg: "6.25rem",
 				xl: "7.25rem",
+				"2xl": "10rem",
 			},
 		},
 	},
