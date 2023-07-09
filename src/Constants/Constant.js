@@ -5,22 +5,22 @@ import whatsapp from "../assets/Images/best-homeopathic-treatment-center-naturop
 const navLinks = [
 	{
 		id: 1,
-		name: "Home",
+		linkText: "Home",
 		link: "#",
 	},
 	{
 		id: 2,
-		name: "About us",
+		linkText: "About us",
 		link: "#",
 	},
 	{
 		id: 3,
-		name: "Faqs",
+		linkText: "Faqs",
 		link: "#",
 	},
 	{
 		id: 4,
-		name: "Our Address",
+		linkText: "Our Address",
 		link: "#",
 	},
 ];

@@ -1,62 +1,60 @@
 //! Imports
 import { useState } from "react";
 import { navLinks } from "../../Constants/Constant";
-import { Brand, hamBurger } from "../../assets/Images/Img";
+import { Times, brandLogo, hamBurger } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 
-//! Nav function
 const Nav = () => {
-	const [mobileMenu, setMobileMenu] = useState(false);
-
-	const handleMobileMenu = () => {
-		setMobileMenu((prev) => !prev);
-	};
+	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
 			<nav>
-				<div className="container">
-					<div className="nav_wrapper flex justify-between items-center my-md">
-						<div className="nav_logo flex items-center w-[17%]">
-							<img src={Brand} alt="logo" />
-						</div>
-						<div className="nav_menu hidden md:flex ">
-							<ul className="nav_link flex justify-around items-center text-md">
-								{navLinks.map((link) => (
-									<li className="mx-4 my-1" key={link.id}>
-										<a href={link.link}>{link.name}</a>
-									</li>
-								))}
-								<Btn name="Contact us" />
-							</ul>
+				<div className="container flex justify-between items-center py-5">
+					<div className="nav_logo w-[12em] flex justify-center items-center">
+						<img src={brandLogo} alt="Sheba Homeo Hall" />
+					</div>
+					<div className="nav_menu tablet:hidden">
+						<div
+							className="ham--icon p-4 relative z-50 w-[46px]"
+							onClick={() => setOpen((prev) => !prev)}>
+							<img
+								src={isOpen ? Times : hamBurger}
+								className="object-contain"
+								alt="Mobile menu"
+							/>
 						</div>
 						<div
-							className="nav_mobile flex md:hidden"
-							onClick={() => {
-								handleMobileMenu();
-							}}>
-							<div className="ham_burger w-5 relative z-10 m-2 focus:ring-2">
-								<img src={hamBurger} alt="mobile-menu" />
-							</div>
-							<div
-								className={`${
-									mobileMenu ? "flex" : "hidden"
-								} nav_menu--mobile`}>
-								<ul className="nav_link justify-start items-center text-xl flex flex-col w-[65%] h-screen fixed right-0 top-0 bg-slate-200">
-									{navLinks.map((link) => (
-										<li
-											className="mx-auto my-8 border-b-2 border-black"
-											key={link.id}>
-											<a href={link.link}>{link.name}</a>
-										</li>
-									))}
-									<Btn name="Contact us" />
-								</ul>
+							className={`${
+								isOpen === true ? `flex` : `hidden`
+							} absolute top-0 right-0 z-40 bg-white border-l-2 rounded-md  min-w-[80%] min-h-screen flex-col pt-10`}>
+							{navLinks.map((links) => (
+								<li
+									className="list-none text-xl py-9 px-8 hover:text-brand hover:ring-2 transition-all"
+									key={links.id}>
+									<a href={links.link}>{links.linkText}</a>
+								</li>
+							))}
+							<div className="px-12 pt-12 text-xl">
+								<Btn name="See in Bangla" />
 							</div>
 						</div>
+					</div>
+					<div className="nav_menu flex-1 hidden tablet:flex justify-end items-center">
+						<ul className="flex items-center">
+							{navLinks.map((links) => (
+								<li
+									key={links.id}
+									className="px-[1.5em]  text-md list-none hover:text-brand transition-all">
+									<a href={links.link}>{links.linkText}</a>
+								</li>
+							))}
+							<Btn name="See in Bangla" />
+						</ul>
 					</div>
 				</div>
 			</nav>
 		</>
 	);
 };
+
 export default Nav;

@@ -31,10 +31,17 @@ const config = {
 			"2xl": "2.75rem",
 			"3xl": "4.375rem",
 		},
+		screens: {
+			mobile: "375px",
+			mobileLg: "640px",
+			tabetSm: "768px",
+			tablet: "991px",
+			desktopSm: "1024px",
+			DesktopMd: "1280px",
+			Desktop2xl: "1536px",
+			Desktop3xl: "1920px",
+		},
 		extend: {
-			screens: {
-				"3xl": "1920px",
-			},
 			spacing: {
 				xsm: "2.1875rem",
 				sm: "2.5em",
