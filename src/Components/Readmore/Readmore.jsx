@@ -23,7 +23,7 @@ export const ReadMore = (props) => {
 				onClick={() => handleReadmore()}
 				className={
 					content.length > 200
-						? "flex btn py-1 px-2 text-xl my-6 rounded-md"
+						? "flex btn py-1 px-2 text-xl my-6 rounded-md hover:ring-2 hover:ring-black"
 						: "hidden"
 				}>
 				{Read ? "Read more" : "Read less"}
