@@ -1,14 +1,21 @@
 /* eslint-disable react/prop-types */
+//! Imports
+//? content imports
 import { chamberInfo } from "../../Constants/Constant";
+
+//? Images Imports
 import {
 	chamberBottom,
 	chamberMiddle,
 	chamberTop,
 } from "../../assets/Images/Img";
-import { Btn } from "../Button/Btn";
 
+//? Function Imports
+import { ReadMore } from "../Readmore/Readmore";
+
+//! Default Function
 const Chamber = (props) => {
-	const { Read, handleReadmore, handleLanguage } = props;
+	const { handleLanguage } = props;
 	return (
 		<>
 			<div className="section">
@@ -35,20 +42,12 @@ const Chamber = (props) => {
 							{handleLanguage(chamberInfo.bn.title, chamberInfo.en.title)}
 						</h2>
 						<div className="horizontal_line w-1/3 my-xsm"></div>
-						<p>
-							{handleLanguage(
+						<ReadMore
+							content={handleLanguage(
 								chamberInfo.bn.description,
 								chamberInfo.en.description
-							)}{" "}
-							{/*! need richtext field */}
-						</p>
-
-						<div className="w-full flex justify-center">
-							<Btn
-								className="text-md px-8 my-10"
-								name="Get Chamber Location on Map"
-							/>
-						</div>
+							)}
+						/>
 					</div>
 				</div>
 			</div>

@@ -69,7 +69,8 @@ const chamberInfo = {
 		tag: "TREATMENT CENTER",
 		title: (
 			<>
-				Your <span className=" text-brand text-xl">only</span> <br />
+				Your <span className=" text-brand text-xl">only</span>{" "}
+				<br className="inline tabetSm:hidden" />
 				reliable treatment center to recover fully
 			</>
 		),

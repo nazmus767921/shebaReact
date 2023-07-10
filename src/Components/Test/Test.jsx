@@ -33,12 +33,6 @@ const Test = () => {
 			{/* //* readMore function */}
 
 			<div className="px-10 line-clamp-none">
-				{/* <p className={Read}>{chamberInfo.en.description}</p>
-				<button
-					onClick={() => handleReadmore()}
-					className="btn py-1 px-2 text-xl my-6">
-					readmore
-				</button> */}
 				<ReadMore content={chamberInfo.en.description} />
 			</div>
 		</div>
