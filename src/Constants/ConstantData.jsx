@@ -88,10 +88,19 @@ const chamberInfo = {
 //! Offerings Section
 const offeringsMedicine = {
 	en: {
-		title:
-			"We give you best possible treatment and provide you 100% Authentic medicine originated from Germany.",
+		title: (
+			<>
+				We give you best possible treatment and provide you
+				<span className="text-brand">
+					<br />
+					<span className="text-[1.75em]">100%</span>
+					<br /> Authentic medicine
+				</span>{" "}
+				originated from Germany.
+			</>
+		),
 		description:
-			"We also have the best medicines from Switzerland, India, and Pakistan. And Sometimes we use our domestic [made in Bangladesh medicines] and local best medicines according to your demand. We deliver only the best to you and your health.",
+			"We also have the best medicines from Switzerland, India, and Pakistan. And Sometimes we use our domestic [Made in Bangladesh medicines] and local best medicines according to your demand. We deliver only the best to you and your health.",
 	},
 	bn: {
 		title:

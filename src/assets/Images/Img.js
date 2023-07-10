@@ -1,3 +1,4 @@
+//! imports
 import heroImg from "./hero_image-jpeg2x.jpeg";
 import brandLogo from "./best-homeopathic-treatment-center-naturopathic-treatment-logo_color.svg";
 import heroLeaf from "./best-homeopathic-treatment-center-naturopathic-treatment-leaf.png";
@@ -6,7 +7,9 @@ import Times from "./best-homeopathic-treatment-center-naturopathic-treatment-ti
 import chamberMiddle from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-dhaka.png";
 import chamberTop from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-prayer_small.png";
 import chamberBottom from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-dhaka-bd-chamber_small.png";
+import bottle from "../Images/best-homeopathic-treatment-center-naturopathic-treatment-bottle.png";
 
+//! export
 export {
 	brandLogo,
 	heroImg,
@@ -16,4 +19,5 @@ export {
 	chamberMiddle,
 	chamberTop,
 	chamberBottom,
+	bottle,
 };
