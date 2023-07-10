@@ -10,12 +10,16 @@ const Nav = (props) => {
 	const [isOpen, setOpen] = useState(false);
 	return (
 		<>
-			<nav>
+			<nav className="fixed w-full top-0 bg-white z-[1000]">
+				{/*  //! logo */}
 				<div className="container flex justify-between items-center py-5">
 					<div className="nav_logo w-[12em] flex justify-center items-center">
 						<img src={brandLogo} alt="Sheba Homeo Hall" />
 					</div>
+
+					{/* //! Mobile menu */}
 					<div className="nav_menu desktopXs:hidden">
+						{/* //! HAMBURGER ICON */}
 						<div
 							className="ham--icon p-4 relative z-50 w-[46px]"
 							onClick={() => setOpen((prev) => !prev)}>
@@ -25,13 +29,15 @@ const Nav = (props) => {
 								alt="Mobile menu"
 							/>
 						</div>
+
+						{/* //! menu links */}
 						<div
 							className={`${
 								isOpen === true ? `flex` : `hidden`
-							} absolute top-0 right-0 z-40 bg-white border-l-2 rounded-md  min-w-screen min-h-screen flex-col pt-10`}>
+							} fixed top-0 right-0 z-40 bg-white border-l-2 rounded-md  min-w-screen min-h-screen flex-col pt-10`}>
 							{navLinks.map((links) => (
 								<li
-									className="list-none text-xl py-9 px-8 hover:text-brand hover:ring-2 transition-all"
+									className="list-none text-xl py-9 px-8 hover:text-brand transition-all"
 									key={links.id}>
 									<a href={links.link}>{links.linkText}</a>
 								</li>
@@ -43,6 +49,8 @@ const Nav = (props) => {
 							</div>
 						</div>
 					</div>
+
+					{/* //! desktop menu */}
 					<div className="nav_menu flex-1 hidden desktopXs:flex justify-end items-center">
 						<ul className="flex items-center">
 							{navLinks.map((links) => (
