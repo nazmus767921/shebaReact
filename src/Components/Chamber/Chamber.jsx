@@ -22,7 +22,7 @@ const Chamber = (props) => {
 				<div className="container w-full flex flex-col desktopXs:flex-row desktopXs:items-center">
 					{/* IMAGE */}
 					<div className="w-full desktopXs:mx-md desktopXs:flex-shrink desktopXs:-ml-[100px]">
-						<div className="chamber_img_wrapper relative w-[43%] tabletLg: mx-auto my-2xl">
+						<div className="chamber_img_wrapper relative w-[43%] mobileLg:w-[35%] tabletLg:w-[30%] desktopXs:w-[35%] tabletLg: mx-auto my-2xl mobileLg:my-[15em]">
 							<div className="rounded-bl-[10vw] desktopXs:rounded-bl-[6vw] overflow-hidden">
 								<img src={chamberMiddle} alt="Sheba Homeo Hall" />
 							</div>
@@ -37,7 +37,7 @@ const Chamber = (props) => {
 
 					{/* Text Content */}
 					<div className="chamber_content flex flex-col desktopSm:basis-1/2 flex-shrink-0">
-						<p className="tagLine tracking-[.75em] text-brand text-sm flex w-fit mx-auto">
+						<p className="tagLine tracking-[.75em] text-brand text-sm flex w-fit mx-auto font-bold mb-10">
 							{handleLanguage(chamberInfo.bn.tag, chamberInfo.en.tag)}
 						</p>
 						<h2>
