@@ -53,7 +53,7 @@ const Nav = (props) => {
 								</li>
 							))}
 							<div onClick={() => setBangla((prev) => !prev)}>
-								<Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} />
+								<Btn name={`Change to ${isBangla ? "English" : "Bangla"}`} />
 							</div>
 							{/* <Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} /> */}
 						</ul>
