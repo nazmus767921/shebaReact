@@ -39,7 +39,7 @@ const Nav = (props) => {
 							<div
 								className="px-12 pt-12 text-xl"
 								onClick={() => setBangla((prev) => !prev)}>
-								<Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} />
+								<Btn name={`Change to ${isBangla ? "English" : "Bangla"}`} />
 							</div>
 						</div>
 					</div>

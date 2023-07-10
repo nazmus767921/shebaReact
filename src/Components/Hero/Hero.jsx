@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 //! Imports
+import { useContext } from "react";
 import { heroSection, tagLines } from "../../Constants/ConstantData";
 import { heroLeaf } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
+import { LanguageChange } from "../../App";
 
 //! Default Function
-const Hero = (props) => {
+const Hero = () => {
 	//! Props destructuring
-	const { handleLanguage } = props;
+	const handleLanguage = useContext(LanguageChange);
 
 	return (
 		<>

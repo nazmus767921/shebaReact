@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 //! Imports
 //? content imports
+import { useContext } from "react";
 import { chamberInfo } from "../../Constants/ConstantData";
 
 //? Images Imports
@@ -12,10 +13,11 @@ import {
 
 //? Function Imports
 import { ReadMore } from "../Readmore/Readmore";
+import { LanguageChange } from "../../App";
 
 //! Default Function
-const Chamber = (props) => {
-	const { handleLanguage } = props;
+const Chamber = () => {
+	const handleLanguage = useContext(LanguageChange);
 	return (
 		<>
 			<div className="section">
