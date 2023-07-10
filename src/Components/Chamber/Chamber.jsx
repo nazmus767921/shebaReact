@@ -8,7 +8,7 @@ import {
 import { Btn } from "../Button/Btn";
 
 const Chamber = (props) => {
-	const { handleLanguage } = props;
+	const { Read, handleReadmore, handleLanguage } = props;
 	return (
 		<>
 			<div className="section">
