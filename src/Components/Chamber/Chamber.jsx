@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 //! Imports
 //? content imports
-import { chamberInfo } from "../../Constants/Constant";
+import { chamberInfo } from "../../Constants/ConstantData";
 
 //? Images Imports
 import {

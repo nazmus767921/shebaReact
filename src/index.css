@@ -66,6 +66,7 @@
 		@apply w-fit px-md py-4;
 		@apply text-white font-bold hover:text-black;
 		@apply border-0;
+		@apply rounded-md hover:ring-2 hover:ring-black;
 	}
 
 	.tagLine {

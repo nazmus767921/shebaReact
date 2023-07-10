@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 //! Imports
-import { heroSection, tagLines } from "../../Constants/Constant";
+import { heroSection, tagLines } from "../../Constants/ConstantData";
 import { heroLeaf } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 //! Imports
 import { useState } from "react";
-import { navLinks } from "../../Constants/Constant";
+import { navLinks } from "../../Constants/ConstantData";
 import { Times, brandLogo, hamBurger } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 
