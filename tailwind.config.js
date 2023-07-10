@@ -32,14 +32,14 @@ const config = {
 			"3xl": "4.375rem",
 		},
 		screens: {
-			mobile: "375px",
-			mobileLg: "640px",
-			tabetSm: "768px",
-			tablet: "991px",
+			mobileLg: "375px",
+			tabletSm: "640px",
+			tabletLg: "768px",
+			desktopXs: "991px",
 			desktopSm: "1024px",
-			DesktopMd: "1280px",
-			Desktop2xl: "1536px",
-			Desktop3xl: "1920px",
+			desktopMd: "1280px",
+			desktopXl: "1536px",
+			desktop2xl: "1920px",
 		},
 		extend: {
 			spacing: {

@@ -15,7 +15,7 @@ const Nav = (props) => {
 					<div className="nav_logo w-[12em] flex justify-center items-center">
 						<img src={brandLogo} alt="Sheba Homeo Hall" />
 					</div>
-					<div className="nav_menu tablet:hidden">
+					<div className="nav_menu desktopXs:hidden">
 						<div
 							className="ham--icon p-4 relative z-50 w-[46px]"
 							onClick={() => setOpen((prev) => !prev)}>
@@ -43,7 +43,7 @@ const Nav = (props) => {
 							</div>
 						</div>
 					</div>
-					<div className="nav_menu flex-1 hidden tablet:flex justify-end items-center">
+					<div className="nav_menu flex-1 hidden desktopXs:flex justify-end items-center">
 						<ul className="flex items-center">
 							{navLinks.map((links) => (
 								<li

@@ -19,9 +19,9 @@ const Chamber = (props) => {
 	return (
 		<>
 			<div className="section">
-				<div className="container">
+				<div className="container flex flex-col desktopXs:flex-row">
 					{/* IMAGE */}
-					<div className="chamber_img_wrapper relative w-fit mx-auto my-2xl">
+					<div className="chamber_img_wrapper relative w-fit tabletLg: mx-auto my-2xl desktopXs:basis-1/2">
 						<div className="w-[34.2144vw] rounded-bl-[10vw] overflow-hidden">
 							<img src={chamberMiddle} alt="Sheba Homeo Hall" />
 						</div>
@@ -34,7 +34,7 @@ const Chamber = (props) => {
 					</div>
 
 					{/* Text Content */}
-					<div className="chamber_content flex-col">
+					<div className="chamber_content flex flex-col">
 						<p className="tagLine tracking-[.75em] text-brand text-sm flex w-fit mx-auto">
 							{handleLanguage(chamberInfo.bn.tag, chamberInfo.en.tag)}
 						</p>

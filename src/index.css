@@ -6,7 +6,7 @@
 
 @layer base {
 	body {
-		@apply text-[12.8px] Desktop2xl:text-[0.8333333333333334vw] Desktop3xl:text-[16px];
+		@apply text-[12.8px] desktopXl:text-[0.8333333333333334vw] desktop2xl:text-[16px];
 		@apply m-0;
 		@apply font-['FreeSans_Medium'];
 	}
@@ -16,16 +16,16 @@
 	}
 
 	h1 {
-		@apply font-['FreeSans_Bold'] text-2xl desktopSm:text-3xl capitalize leading-normal;
+		@apply font-['FreeSans_Bold'] text-2xl capitalize desktopMd:text-3xl leading-normal;
 	}
 
 	h2 {
-		@apply font-['FreeSans_Bold'] text-[2.5em] tabetSm:text-2xl leading-normal;
+		@apply font-['FreeSans_Bold'] text-[2.5em] desktopMd:text-2xl leading-normal;
 	}
 
 	p {
 		@apply font-['asar'];
-		@apply text-xl tablet:text-md;
+		@apply text-xl;
 		@apply leading-loose;
 	}
 
@@ -58,7 +58,7 @@
 
 @layer components {
 	.container {
-		@apply max-w-[90%] tabetSm:max-w-[80%] mx-auto;
+		@apply max-w-[90%] tabletLg:max-w-[80%] mx-auto;
 	}
 
 	.btn {
