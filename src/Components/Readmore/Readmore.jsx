@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 //! USING ONLY REACT
 
 //! Imports
