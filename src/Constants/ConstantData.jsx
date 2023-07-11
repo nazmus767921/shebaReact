@@ -120,24 +120,37 @@ const offeringsPitch = {
 				<br /> is the best choice for you?
 			</>
 		),
-		list: {
-			1: "You will receive the best treatment from here than all other places.",
-			2: "We Cured more than 25 thousand patients like you.",
-			3: "We handled 8600+ rare cases like cancer, kidney, liver, and heart problem.",
-			4: "We have 22 years of experience in healing and a success rate of 97%.",
-			5: "You will save a large amount of money and time.",
-		},
 	},
 	bn: {
 		title: "৫টি কারনে চিকিৎসার জন্য সেবা হোমিও হল হতে পারে আপনার প্রথম পছন্দ",
-		list: {
-			1: "আপনি এখান থেকে অন্য সব জায়গার চেয়ে সেরা চিকিৎসা পাবেন।",
-			2: "আপনার মত 25 হাজারেরও বেশি রোগী আমাদের চিকিৎসায় সুস্থ হয়েছে।",
-			3: "আমরা 8600+ এর বেশী ক্যান্সার, কিডনি, লিভার এবং হার্টের সমস্যার মতো জটিল ও দীর্ঘস্থায়ী কেস পরিচালনা করেছি এবং সুস্থ্য হয়েছে।",
-			4: "নিরাময়ে আমাদের 22 বছরের অভিজ্ঞতা এবং শতকরা ৯৭% সাফল্যের হার রয়েছে।",
-			5: "আমদের চিকিৎসায়, অন্যান্য চিকিৎসা ব্যবস্থার চেয়ে প্রচুর অর্থ এবং সময় বাঁচবে আপনার।",
-		},
 	},
+	list: [
+		{
+			id: 1,
+			en: "You will receive the best treatment from here than all other places.",
+			bn: "আপনি এখান থেকে অন্য সব জায়গার চেয়ে সেরা চিকিৎসা পাবেন।",
+		},
+		{
+			id: 2,
+			en: "We Cured more than 25 thousand patients like you.",
+			bn: "আপনার মত 25 হাজারেরও বেশি রোগী আমাদের চিকিৎসায় সুস্থ হয়েছে।",
+		},
+		{
+			id: 3,
+			en: "We handled 8600+ rare cases like cancer, kidney, liver, and heart problem.",
+			bn: "আমরা 8600+ এর বেশী ক্যান্সার, কিডনি, লিভার এবং হার্টের সমস্যার মতো জটিল ও দীর্ঘস্থায়ী কেস পরিচালনা করেছি এবং সুস্থ্য হয়েছে।",
+		},
+		{
+			id: 4,
+			en: "We have 22 years of experience in healing and a success rate of 97%.",
+			bn: "নিরাময়ে আমাদের 22 বছরের অভিজ্ঞতা এবং শতকরা ৯৭% সাফল্যের হার রয়েছে।",
+		},
+		{
+			id: 5,
+			en: "You will save a large amount of money and time.",
+			bn: "আমদের চিকিৎসায়, অন্যান্য চিকিৎসা ব্যবস্থার চেয়ে প্রচুর অর্থ এবং সময় বাঁচবে আপনার।",
+		},
+	],
 };
 
 //! Doctor Info

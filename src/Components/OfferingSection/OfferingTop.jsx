@@ -11,7 +11,7 @@ const OfferingTop = () => {
 	//! context api
 	const handleLanguage = useContext(LanguageChange);
 	return (
-		<div className="border-t-2 pt-lg mt-lg">
+		<div className="pt-lg">
 			<div className="container">
 				<div className="flex flex-col tabletLg:flex-row tabletLg:items-center">
 					<div className="w-[55%] tabletLg:w-[30%] desktopXs:w-[25%] m-[2em_auto]">
