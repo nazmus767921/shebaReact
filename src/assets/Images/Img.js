@@ -11,7 +11,7 @@ import bottle from "./best-homeopathic-treatment-center-naturopathic-treatment-b
 import Offerings from "./best-homeopathic-treatment-center-naturopathic-treatment-care.png";
 import doctorProfileImg from "./best-homeopathic-treatment-center-naturopathic-treatment-doctor.png";
 import whatsapp from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
-import phoneIco from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-dhaka-bd-call_pill.svg";
+import phoneIco from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-phone.svg";
 import ratingStar from "./best-homeopathic-treatment-center-naturopathic-treatment-top-rated.svg";
 
 //! export
