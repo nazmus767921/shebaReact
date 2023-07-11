@@ -23,20 +23,20 @@ const RatingCard = (props) => {
 	const { className } = props;
 	return (
 		<div
-			className={`flex justify-around items-center w-[10em] tabletSm:w-[13em] desktopSm:w-[12em] bg-white rounded-md px-4 tabletSm:py-6 shadow-md ${className}`}>
-			<div className="">
+			className={`flex justify-around items-center w-[10em] tabletSm:w-[13em] desktopSm:w-[12em] bg-white rounded-md px-4 py-3 tabletSm:py-6 shadow-md ${className}`}>
+			<div className="w-5 tabletSm:w-6 ">
 				<img src={ratingStar} alt="" />
 			</div>
-			<div className="">
+			<div className="w-5 tabletSm:w-6 ">
 				<img src={ratingStar} alt="" />
 			</div>
-			<div className="">
+			<div className="w-5 tabletSm:w-6 ">
 				<img src={ratingStar} alt="" />
 			</div>
-			<div className="">
+			<div className="w-5 tabletSm:w-6 ">
 				<img src={ratingStar} alt="" />
 			</div>
-			<div className="">
+			<div className="w-5 tabletSm:w-6 ">
 				<img src={ratingStar} alt="" />
 			</div>
 		</div>
