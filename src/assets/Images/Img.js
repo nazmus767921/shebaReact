@@ -12,6 +12,7 @@ import Offerings from "./best-homeopathic-treatment-center-naturopathic-treatmen
 import doctorProfileImg from "./best-homeopathic-treatment-center-naturopathic-treatment-doctor.png";
 import whatsapp from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
 import phoneIco from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-dhaka-bd-call_pill.svg";
+import ratingStar from "./best-homeopathic-treatment-center-naturopathic-treatment-top-rated.svg";
 
 //! export
 export {
@@ -28,4 +29,5 @@ export {
 	doctorProfileImg,
 	whatsapp,
 	phoneIco,
+	ratingStar,
 };

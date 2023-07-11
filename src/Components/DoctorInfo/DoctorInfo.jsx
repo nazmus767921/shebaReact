@@ -3,16 +3,39 @@
 //! Imports Here
 import { useContext } from "react";
 import { LanguageChange } from "../../App";
-import { doctorProfileImg } from "../../assets/Images/Img";
+import { doctorProfileImg, ratingStar } from "../../assets/Images/Img";
 import { doctorInfo } from "../../Constants/ConstantData";
 
 //! Custom Componetn Functions
-//? floatingCard Component
+//* floatingCard Component
 function FloatingCard(props) {
 	const { className, content } = props;
 	return (
 		<div className={`w-2xl text-md text-center px-[1em] py-xs ${className}`}>
 			{content}
+		</div>
+	);
+}
+
+//* Rating Card component
+function RatingCard() {
+	return (
+		<div className=" flex gap-2 justify-center items-center w-[13em] bg-white rounded-md px-xs py-[1em] shadow-md absolute z-10">
+			<div className="">
+				<img src={ratingStar} alt="" />
+			</div>
+			<div className="">
+				<img src={ratingStar} alt="" />
+			</div>
+			<div className="">
+				<img src={ratingStar} alt="" />
+			</div>
+			<div className="">
+				<img src={ratingStar} alt="" />
+			</div>
+			<div className="">
+				<img src={ratingStar} alt="" />
+			</div>
 		</div>
 	);
 }
@@ -26,6 +49,7 @@ const DoctorInfo = () => {
 			<div className="container">
 				{/* //? Doctor Images */}
 				<div className="">
+					<RatingCard />
 					<FloatingCard
 						className="bg-[#f2fbff] rounded-full"
 						content={handleLanguage(
