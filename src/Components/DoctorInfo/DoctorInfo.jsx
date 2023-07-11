@@ -68,7 +68,7 @@ const DoctorInfo = () => {
 						)}
 					/>
 					{/* //! Profile Image */}
-					<div className="flex w-[62vw] tabletSm:w-[40vw] desktopSm:w-[28vw] justify-center items-center">
+					<div className="flex w-[62vw] tabletSm:w-[40vw] desktopSm:w-[22vw] justify-center items-center">
 						<img src={doctorProfileImg} alt="" />
 					</div>
 				</div>
