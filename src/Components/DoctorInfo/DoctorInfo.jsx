@@ -12,7 +12,7 @@ const FloatingCard = (props) => {
 	const { className, content } = props;
 	return (
 		<div
-			className={`max-w-[8em] text-md text-center font-[Asar] p-2 ${className}`}>
+			className={`max-w-[8em] tabletSm:text-xl text-md text-center font-[Asar] p-2 ${className}`}>
 			{content}
 		</div>
 	);
@@ -23,7 +23,7 @@ const RatingCard = (props) => {
 	const { className } = props;
 	return (
 		<div
-			className={`flex gap-2 justify-center items-center w-[10em] bg-white rounded-md px-[1em] py-[1em] shadow-md ${className}`}>
+			className={`flex justify-around items-center w-[10em] tabletSm:w-[15em] bg-white rounded-md px-4 tabletSm:py-6 shadow-md ${className}`}>
 			<div className="">
 				<img src={ratingStar} alt="" />
 			</div>
@@ -52,7 +52,7 @@ const DoctorInfo = () => {
 			<div className="container">
 				{/* //? Doctor Images */}
 				<div className="relative w-fit mx-auto my-2xl mt-md">
-					<RatingCard className="absolute z-10 -top-[10%] -right-[22%]" />
+					<RatingCard className="absolute z-10 -top-[10%] -right-[22%] tabletSm:-right-[50%]" />
 					<FloatingCard
 						className="bg-[#f2fbff] rounded-full absolute -top-[2%] -left-[25%] py-5"
 						content={handleLanguage(
@@ -68,7 +68,7 @@ const DoctorInfo = () => {
 						)}
 					/>
 					{/* //! Profile Image */}
-					<div className="flex w-[62vw] justify-center items-center">
+					<div className="flex w-[62vw] tabletSm:w-[40vw] justify-center items-center">
 						<img src={doctorProfileImg} alt="" />
 					</div>
 				</div>

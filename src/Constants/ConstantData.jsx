@@ -160,7 +160,9 @@ const doctorInfo = {
 	en: {
 		title: (
 			<>
-				<span className="text-brand text-xl font-extrabold font-[Asar]">The friendly Doctor</span>
+				<span className="text-brand text-[1.1em] font-extrabold font-[Asar]">
+					The friendly Doctor
+				</span>
 				<br /> you need to solve all your health problems
 			</>
 		),
