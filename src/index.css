@@ -72,6 +72,7 @@
 	.tagLine {
 		@apply font-['FreeSans_Medium'] text-md;
 		@apply leading-snug;
+		@apply my-xs;
 	}
 
 	.horizontal_line {

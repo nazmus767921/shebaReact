@@ -45,7 +45,7 @@ const Chamber = () => {
 						<h2>
 							{handleLanguage(chamberInfo.bn.title, chamberInfo.en.title)}
 						</h2>
-						<div className="horizontal_line w-1/3 my-xsm"></div>
+						<div className="horizontal_line w-1/3 my-xs"></div>
 						<ReadMore
 							content={handleLanguage(
 								chamberInfo.bn.description,

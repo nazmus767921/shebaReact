@@ -94,7 +94,7 @@ const offeringsMedicine = {
 				<span className="text-brand">
 					<br />
 					<span className="text-[1.75em]">100%</span>
-					<br /> Authentic medicine
+					<br className="tabletLg:hidden inline" /> Authentic medicine
 				</span>{" "}
 				originated from Germany.
 			</>
@@ -112,7 +112,14 @@ const offeringsMedicine = {
 
 const offeringsPitch = {
 	en: {
-		title: "5 reasons why Sheba Homeo Hall is the best choice for you?",
+		title: (
+			<>
+				5 reasons why
+				<br />
+				<span className="text-brand">Sheba Homeo Hall</span>
+				<br /> is the best choice for you?
+			</>
+		),
 		list: {
 			1: "You will receive the best treatment from here than all other places.",
 			2: "We Cured more than 25 thousand patients like you.",

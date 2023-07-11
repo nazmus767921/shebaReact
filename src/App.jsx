@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 import Hero from "./Components/Hero/Hero";
 import Nav from "./Components/Nav/Nav";
 import Chamber from "./Components/Chamber/Chamber";
-import Offering from "./Components/OfferingSection/Offering";
+import OfferingSection from "./Components/OfferingSection/OfferingSection";
 // import Test from "./Components/Test/Test";
 
 //! context API
@@ -19,13 +19,13 @@ function App() {
 	};
 	return (
 		<LanguageChange.Provider value={handleLanguage}>
-			<Nav setBangla={setBangla} isBangla={isBangla} />
+			<div className="pb-xl desktopXs:pb-[10em]">
+				<Nav setBangla={setBangla} isBangla={isBangla} />
+			</div>
 			<Hero />
-			<Chamber />{" "}
-			{/* for now its using props to pass isBangla to the component,
-			but rewrite the code and use contextAPI instead */}
+			<Chamber />
 			{/* <Test /> */}
-			<Offering />
+			<OfferingSection />
 		</LanguageChange.Provider>
 	);
 }

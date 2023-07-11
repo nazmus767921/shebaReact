@@ -43,7 +43,7 @@ const config = {
 		},
 		extend: {
 			spacing: {
-				xsm: "1.5rem",
+				xs: "1.5rem",
 				sm: "2.5em",
 				md: "3.125rem",
 				lg: "6.25rem",

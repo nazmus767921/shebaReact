@@ -8,6 +8,7 @@ import chamberMiddle from "./chamber/best-homeopathic-treatment-center-naturopat
 import chamberTop from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-prayer_small.png";
 import chamberBottom from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-dhaka-bd-chamber_small.png";
 import bottle from "../Images/best-homeopathic-treatment-center-naturopathic-treatment-bottle.png";
+import Offerings from "./best-homeopathic-treatment-center-naturopathic-treatment-care.png";
 
 //! export
 export {
@@ -20,4 +21,5 @@ export {
 	chamberTop,
 	chamberBottom,
 	bottle,
+	Offerings,
 };

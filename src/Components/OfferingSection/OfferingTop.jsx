@@ -7,37 +7,39 @@ import { LanguageChange } from "../../App";
 //? images imports
 import { bottle } from "../../assets/Images/Img";
 
-const Offering = () => {
+const OfferingTop = () => {
 	//! context api
 	const handleLanguage = useContext(LanguageChange);
 	return (
 		<div className="border-t-2 pt-lg mt-lg">
 			<div className="container">
-				<div className="">
-					<div className="w-[55%] m-[2em_auto]">
+				<div className="flex flex-col tabletLg:flex-row tabletLg:items-center">
+					<div className="w-[55%] tabletLg:w-[30%] desktopXs:w-[25%] m-[2em_auto]">
 						<img src={bottle} alt="" />
 					</div>
-					<div className="text-center">
-						<p className="tagLine mb-xsm">
+					<div className="text-center tabletLg:basis-1/2 tabletLg:flex-grow-0 tabletLg:text-left">
+						<p className="tagLine mb-xs">
 							{handleLanguage(tagLines[2], tagLines[2])}
 						</p>
-						<h2 className="mb-xsm">
+						<h2 className="mb-xs">
 							{handleLanguage(
 								offeringsMedicine.bn.title,
 								offeringsMedicine.en.title
 							)}
 						</h2>
-						<p className="text-justify ">
-							{handleLanguage(
-								offeringsMedicine.bn.description,
-								offeringsMedicine.en.description
-							)}
-						</p>
 					</div>
+				</div>
+				<div className="">
+					<p className="text-justify tabletLg:text-center">
+						{handleLanguage(
+							offeringsMedicine.bn.description,
+							offeringsMedicine.en.description
+						)}
+					</p>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-export default Offering;
+export default OfferingTop;
