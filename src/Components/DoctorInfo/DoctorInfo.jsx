@@ -8,19 +8,22 @@ import { doctorInfo } from "../../Constants/ConstantData";
 
 //! Custom Componetn Functions
 //* floatingCard Component
-function FloatingCard(props) {
+const FloatingCard = (props) => {
 	const { className, content } = props;
 	return (
-		<div className={`w-2xl text-md text-center px-[1em] py-xs ${className}`}>
+		<div
+			className={`max-w-[8em] text-md text-center font-[Asar] p-2 ${className}`}>
 			{content}
 		</div>
 	);
-}
+};
 
 //* Rating Card component
-function RatingCard() {
+const RatingCard = (props) => {
+	const { className } = props;
 	return (
-		<div className=" flex gap-2 justify-center items-center w-[13em] bg-white rounded-md px-xs py-[1em] shadow-md absolute z-10">
+		<div
+			className={`flex gap-2 justify-center items-center w-[10em] bg-white rounded-md px-[1em] py-[1em] shadow-md ${className}`}>
 			<div className="">
 				<img src={ratingStar} alt="" />
 			</div>
@@ -38,7 +41,7 @@ function RatingCard() {
 			</div>
 		</div>
 	);
-}
+};
 
 //! Deafult Function
 const DoctorInfo = () => {
@@ -48,27 +51,26 @@ const DoctorInfo = () => {
 		<section>
 			<div className="container">
 				{/* //? Doctor Images */}
-				<div className="">
-					<RatingCard />
+				<div className="relative w-fit mx-auto my-2xl mt-md">
+					<RatingCard className="absolute z-10 -top-[10%] -right-[22%]" />
 					<FloatingCard
-						className="bg-[#f2fbff] rounded-full"
+						className="bg-[#f2fbff] rounded-full absolute -top-[2%] -left-[25%] py-5"
 						content={handleLanguage(
 							doctorInfo.bn.shortInfo[1],
 							doctorInfo.en.shortInfo[1]
 						)}
 					/>
-					{/* //! Profile Image */}
-					<div className="flex justify-center items-center">
-						<img src={doctorProfileImg} alt="" />
-					</div>
-
 					<FloatingCard
-						className="bg-[#fff6ec] rounded-md"
+						className="bg-[#fff6ec] rounded-md absolute -right-[22%] -bottom-[12%] py-4 px-1.5"
 						content={handleLanguage(
 							doctorInfo.bn.shortInfo[2],
 							doctorInfo.en.shortInfo[2]
 						)}
 					/>
+					{/* //! Profile Image */}
+					<div className="flex w-[62vw] justify-center items-center">
+						<img src={doctorProfileImg} alt="" />
+					</div>
 				</div>
 
 				{/* //? content  */}
