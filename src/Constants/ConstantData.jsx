@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 //!imports
-import whatsapp from "../assets/Images/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
+import { whatsapp, phoneIco } from "../assets/Images/Img";
 
 //! Navigation
 const navLinks = [
@@ -158,14 +158,22 @@ const offeringsPitch = {
 
 const doctorInfo = {
 	en: {
-		title: "The friendly Doctor you need to solve all your health problems",
+		title: (
+			<>
+				<span className="text-brand text-xl">The friendly Doctor</span>
+				<br /> you need to solve all your health problems
+			</>
+		),
 		description:
 			"Dr. Zohirul Islam is a highly skilled, qualified doctor from BHMC (Bangladesh Homeopathic Medical College). He has an experience in Naturopathic and Homeopathy treatment of 22 years and Cured 25000+ patients and counting.",
 		shortInfo: {
 			1: "Cured 25000 + patients",
 			2: "22 years of experience",
 		},
-		phone: "01712 85 80 71",
+		phone: {
+			icon: phoneIco,
+			number: "01712 85 80 71",
+		},
 	},
 	bn: {
 		title:
@@ -176,7 +184,9 @@ const doctorInfo = {
 			1: "২৫ হাজার+ রোগী সুস্থ হয়েছে",
 			2: "২২ বছরের অভিজ্ঞতা সম্পন্ন",
 		},
-		phone: "০১৭১২- ৮৫ ৮০ ৭১",
+		phone: {
+			number: "০১৭১২- ৮৫ ৮০ ৭১",
+		},
 	},
 	links: {
 		icon: whatsapp,

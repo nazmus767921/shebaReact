@@ -4,6 +4,7 @@ import Hero from "./Components/Hero/Hero";
 import Nav from "./Components/Nav/Nav";
 import Chamber from "./Components/Chamber/Chamber";
 import OfferingSection from "./Components/OfferingSection/OfferingSection";
+import DoctorInfo from "./Components/DoctorInfo/DoctorInfo";
 // import Test from "./Components/Test/Test";
 
 //! context API
@@ -26,6 +27,7 @@ function App() {
 			<Chamber />
 			{/* <Test /> */}
 			<OfferingSection />
+			<DoctorInfo />
 		</LanguageChange.Provider>
 	);
 }

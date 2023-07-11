@@ -7,8 +7,11 @@ import Times from "./best-homeopathic-treatment-center-naturopathic-treatment-ti
 import chamberMiddle from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-dhaka.png";
 import chamberTop from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-prayer_small.png";
 import chamberBottom from "./chamber/best-homeopathic-treatment-center-naturopathic-treatment-dhaka-bd-chamber_small.png";
-import bottle from "../Images/best-homeopathic-treatment-center-naturopathic-treatment-bottle.png";
+import bottle from "./best-homeopathic-treatment-center-naturopathic-treatment-bottle.png";
 import Offerings from "./best-homeopathic-treatment-center-naturopathic-treatment-care.png";
+import doctorProfileImg from "./best-homeopathic-treatment-center-naturopathic-treatment-doctor.png";
+import whatsapp from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
+import phoneIco from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-dhaka-bd-call_pill.svg";
 
 //! export
 export {
@@ -22,4 +25,7 @@ export {
 	chamberBottom,
 	bottle,
 	Offerings,
+	doctorProfileImg,
+	whatsapp,
+	phoneIco,
 };
