@@ -13,9 +13,9 @@ const Hero = () => {
 
 	return (
 		<>
-			<div className="hero_section">
+			<section>
 				<div className="container">
-					<div className="hero_content text-center my-xl">
+					<div className="hero_content text-center">
 						<div className="hero_decoration absolute top-[15%] left-0 w-[30%]">
 							<img
 								src={heroLeaf}
@@ -38,7 +38,7 @@ const Hero = () => {
 						<Btn className="text-xl my-8" name="Contact" />
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

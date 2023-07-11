@@ -11,10 +11,10 @@ const OfferingTop = () => {
 	//! context api
 	const handleLanguage = useContext(LanguageChange);
 	return (
-		<div className="pt-lg">
+		<section>
 			<div className="container">
 				<div className="flex flex-col tabletLg:flex-row tabletLg:items-center">
-					<div className="w-[55%] tabletLg:w-[30%] desktopXs:w-[25%] m-[2em_auto]">
+					<div className="w-[55%] tabletSm:w-[30%] desktopXs:w-[25%] m-[2em_auto]">
 						<img src={bottle} alt="" />
 					</div>
 					<div className="text-center tabletLg:basis-1/2 tabletLg:flex-grow-0 tabletLg:text-left">
@@ -38,7 +38,7 @@ const OfferingTop = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

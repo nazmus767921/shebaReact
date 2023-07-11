@@ -92,9 +92,10 @@ const offeringsMedicine = {
 			<>
 				We give you best possible treatment and provide you
 				<span className="text-brand">
-					<br />
+					{" "}
+					<br className="tabletSm:hidden" />
 					<span className="text-[1.75em]">100%</span>
-					<br className="tabletLg:hidden inline" /> Authentic medicine
+					<br className="tabletSm:hidden inline" /> Authentic medicine
 				</span>{" "}
 				originated from Germany.
 			</>

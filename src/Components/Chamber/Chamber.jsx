@@ -20,7 +20,7 @@ const Chamber = () => {
 	const handleLanguage = useContext(LanguageChange);
 	return (
 		<>
-			<div className="section">
+			<section>
 				<div className="container w-full flex flex-col desktopXs:flex-row desktopXs:items-center">
 					{/* IMAGE */}
 					<div className="w-full desktopXs:mx-md desktopXs:flex-shrink desktopXs:-ml-[100px]">
@@ -54,7 +54,7 @@ const Chamber = () => {
 						/>
 					</div>
 				</div>
-			</div>
+			</section>
 		</>
 	);
 };

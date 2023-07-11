@@ -11,14 +11,14 @@ const OfferingBottom = () => {
 	//! Context API
 	const handleLanguage = useContext(LanguageChange);
 	return (
-		<>
-			<div className="container my-md">
+		<section>
+			<div className="container desktopXs:flex desktopXs:items-center desktopXs:flex-row-reverse">
 				<div className="w-full flex justify-center items-center">
-					<div className="w-[70%] my-md">
+					<div className="w-[70%] tabletSm:w-[50%] desktopXs:w-[70%] my-md">
 						<img src={Offerings} alt="" />
 					</div>
 				</div>
-				<div className="text-center">
+				<div className="text-center desktopXs:text-left desktopXs:basis-1/2 desktopXs:shrink-0">
 					<p className="tagLine">{handleLanguage(tagLines[3], tagLines[3])}</p>
 					<h2>
 						{handleLanguage(offeringsPitch.bn.title, offeringsPitch.en.title)}
@@ -34,7 +34,7 @@ const OfferingBottom = () => {
 					</ul>
 				</div>
 			</div>
-		</>
+		</section>
 	);
 };
 
