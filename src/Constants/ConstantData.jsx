@@ -202,26 +202,31 @@ const Faqs = {
 		title: "What our patients are asking us?",
 		faq: [
 			{
+				id: "1",
 				question: "Is homeopathy safe during pregnanancy?",
 				answer:
 					"We can assure you that Homeopathy is completely safe. We use natural and safe sustances. So, it has no major side effects like other medicines.",
 			},
 			{
+				id: "2",
 				question: "Is homeopathy safe for babies?",
 				answer:
 					"Of course babies are safe from Homeopathic treatment. As, We stated before. We use natural and safe sustances. So, it has no major side effects like other medicines not even for babies.",
 			},
 			{
+				id: "3",
 				question: "Can homeopathy cure ED permanently?",
 				answer:
 					"Erectile dysfunction or difficulty in getting a firm erection or an erection during sexual activities can be cured by Homeopathy and has no side effects.That's why people are more moving towards it. Many patients come to us and get rid of ED and other sexual problems.",
 			},
 			{
+				id: "4",
 				question: "Does homeopathy increase symptoms?",
 				answer:
 					"Sometimes patient gets confused when they see that the symptoms are increased. But it also is a part of the process. But it is very rare.",
 			},
 			{
+				id: "5",
 				question: "why homeopathy works slow?",
 				answer:
 					"Great things takes time. Homeopathy focuses to cure you and give back your health fully. So, it is normal to take time. You have to give yourself time to get back your sound health.",
