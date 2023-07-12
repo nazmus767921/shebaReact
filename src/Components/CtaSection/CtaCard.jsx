@@ -22,9 +22,9 @@ const CtaCard = (props) => {
 			</div>
 			<div className="">
 				<a
-					href={`${
-						type === "number" ? "tel:" : "mailto:"
-					}${content}@gmail.com`}>
+					href={`${type === "number" ? "tel:" : "mailto:"}${content}${
+						type === "number" ? "" : "@gmail.com"
+					}`}>
 					<div className="w-[3.5em] hover:scale-125 transition-transform ease-out-expo duration-500">
 						<img src={icon} alt="sheba-homeo-hall-call" />
 					</div>
