@@ -14,7 +14,7 @@ const CtaSection = () => {
 					<h2>
 						{handleLanguage(CtaContent.bn.titleTop, CtaContent.en.titleTop)}
 					</h2>
-					<p className="text-justify underline underline-offset-[10px]">
+					<p className="text-justify tabletLg:text-center desktopMd:w-[70%] desktopXl:w-1/2 desktopSm:mx-auto underline underline-offset-[10px]">
 						{handleLanguage(CtaContent.bn.pitch, CtaContent.en.pitch)}
 					</p>
 					<h2 className="text-brand">
