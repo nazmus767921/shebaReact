@@ -248,13 +248,13 @@ const CtaContent = {
 		endTag: "We will ensure that you receive the best care.",
 		phone: [
 			{
-				num: "+88 01912-74 00 68",
+				num: "01912-74 00 68",
 			},
 			{
-				num: "+88 01731-67 29 67",
+				num: "01731-67 29 67",
 			},
 		],
-		email: "shebahomoeohallkps @gmail.com",
+		email: "shebahomoeohallkps", //? dont include @gmail.com at the end.it will add it automatically
 	},
 	bn: {
 		titleTop: "তবে দেরী কেন?",

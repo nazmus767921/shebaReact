@@ -13,6 +13,7 @@ import doctorProfileImg from "./best-homeopathic-treatment-center-naturopathic-t
 import whatsapp from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-whatsapp.svg";
 import phoneIco from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-phone.svg";
 import ratingStar from "./best-homeopathic-treatment-center-naturopathic-treatment-top-rated.svg";
+import mailIco from "./best-homeopathic-treatment-center-naturopathic-treatment-mail.svg";
 
 //! export
 export {
@@ -30,4 +31,5 @@ export {
 	whatsapp,
 	phoneIco,
 	ratingStar,
+	mailIco,
 };
