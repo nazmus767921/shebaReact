@@ -8,16 +8,16 @@ const CtaSection = () => {
 	const handleLanguage = useContext(LanguageChange);
 	return (
 		<section>
-			<div className="container">
+			<div className="container flex flex-col gap-lg items-center">
 				{/* //? Text Content area */}
-				<div className="text-center">
+				<div className="text-center flex flex-col gap-xs">
 					<h2>
 						{handleLanguage(CtaContent.bn.titleTop, CtaContent.en.titleTop)}
 					</h2>
-					<p className="text-justify">
+					<p className="text-justify underline underline-offset-[10px]">
 						{handleLanguage(CtaContent.bn.pitch, CtaContent.en.pitch)}
 					</p>
-					<h2>
+					<h2 className="text-brand">
 						{handleLanguage(
 							CtaContent.bn.titleBottom,
 							CtaContent.en.titleBottom
@@ -26,13 +26,19 @@ const CtaSection = () => {
 				</div>
 
 				{/* //? contact area  */}
-				<div className="flex flex-col gap-xs">
-					<CtaCard
-						icon={phoneIco}
-						content={CtaContent.en.phone[1].num}
-						type="number"
-					/>
-					<CtaCard icon={mailIco} content={CtaContent.en.email} type="mail" />
+				<div className="flex flex-col gap-md tabletSm:items-center tabletLg:flex-row tabletLg:justify-center w-full border-2">
+					<div className="flex flex-col gap-xs tabletSm:items-center border-2 basis-1/2">
+						<h3 className="text-brand mx-auto">Call us</h3>
+						<CtaCard
+							icon={phoneIco}
+							content={CtaContent.en.phone[1].num}
+							type="number"
+						/>
+					</div>
+					<div className="flex flex-col gap-xs tabletSm:items-center basis-1/2">
+						<h3 className="text-brand mx-auto">Mail at</h3>
+						<CtaCard icon={mailIco} content={CtaContent.en.email} type="mail" />
+					</div>
 				</div>
 			</div>
 		</section>

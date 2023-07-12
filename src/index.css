@@ -28,7 +28,8 @@
 	}
 
 	h3 {
-		@apply text-xl;
+		/* @apply text-xl; */
+		@apply text-[1.75em] font-bold;
 	}
 
 	p {
@@ -86,5 +87,9 @@
 	.horizontal_line {
 		@apply w-full h-[3px];
 		@apply bg-brand;
+	}
+
+	.cta_card:has(.cta_card--btn:hover) {
+		@apply bg-[#ebfff0];
 	}
 }

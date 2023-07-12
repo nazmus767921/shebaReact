@@ -4,15 +4,18 @@ const CtaCard = (props) => {
 	const { icon, content, type } = props;
 	return (
 		<div
-			className={`${
+			className={`cta_card ${
 				type === "number"
 					? "flex-row py-4"
-					: "flex-col text-center gap-xs py-xs"
-			} flex justify-between items-center px-xs bg-white shadow-xl rounded-md border-[0.5px] border-brand`}>
+					: "flex-col tabletLg:flex-row text-center gap-xs py-xs"
+			} flex gap-7 justify-between items-center px-xs bg-white shadow-[2px_-2px_30px_0_rgba(145,145,145,.15)] rounded-md transition-all`}>
+			{/* //? Text area */}
 			<div className="">
 				<h2
 					className={`${
-						type === "number" ? "flex-row" : "flex-col-reverse"
+						type === "number"
+							? "flex-row"
+							: "flex-col-reverse tabletLg:flex-row-reverse"
 					} flex flex-wrap text-[1.7em]`}>
 					<span className="text-brand">
 						{type === "number" ? "+88" : " @gmail.com"}
@@ -20,7 +23,9 @@ const CtaCard = (props) => {
 					{content}
 				</h2>
 			</div>
-			<div className="">
+
+			{/* //? Icon area */}
+			<div className="cta_card--btn">
 				<a
 					href={`${type === "number" ? "tel:" : "mailto:"}${content}${
 						type === "number" ? "" : "@gmail.com"
