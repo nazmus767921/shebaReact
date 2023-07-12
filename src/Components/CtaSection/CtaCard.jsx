@@ -7,7 +7,7 @@ const CtaCard = (props) => {
 			className={`cta_card ${
 				type === "number"
 					? "flex-row py-4"
-					: "flex-col tabletLg:flex-row text-center gap-xs py-xs"
+					: "flex-col desktopXs:flex-row text-center gap-xs py-xs"
 			} flex gap-7 justify-between items-center px-xs bg-white shadow-[2px_-2px_30px_0_rgba(145,145,145,.15)] rounded-md transition-all`}>
 			{/* //? Text area */}
 			<div className="">
@@ -15,7 +15,7 @@ const CtaCard = (props) => {
 					className={`${
 						type === "number"
 							? "flex-row"
-							: "flex-col-reverse tabletLg:flex-row-reverse"
+							: "flex-col-reverse desktopXs:flex-row-reverse"
 					} flex flex-wrap text-[1.7em]`}>
 					<span className="text-brand">
 						{type === "number" ? "+88" : " @gmail.com"}
