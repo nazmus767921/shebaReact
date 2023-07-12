@@ -6,6 +6,7 @@ import Chamber from "./Components/Chamber/Chamber";
 import OfferingSection from "./Components/OfferingSection/OfferingSection";
 import DoctorInfo from "./Components/DoctorInfo/DoctorInfo";
 import FaqCard from "./Components/FaqCard/FaqCard";
+import FaqSection from "./Components/FaqSection/FaqSection";
 
 //! context API
 export const LanguageChange = createContext();
@@ -20,15 +21,14 @@ function App() {
 	};
 	return (
 		<LanguageChange.Provider value={handleLanguage}>
-			{/* <div className="pb-xl desktopXs:pb-[10em]">
+			<div className="pb-xl desktopXs:pb-[10em]">
 				<Nav setBangla={setBangla} isBangla={isBangla} />
-			</div> */}
-			{/* <Hero />
+			</div>
+			<Hero />
 			<Chamber />
 			<OfferingSection />
-			<DoctorInfo /> */}
-
-			{FaqCard}
+			<DoctorInfo />
+			<FaqSection />
 		</LanguageChange.Provider>
 	);
 }
