@@ -17,7 +17,7 @@ const FaqSection = () => {
 				</div>
 
 				{/* //? divider */}
-				<hr className="border-[1.8px] border-brand my-sm" />
+				<hr className="border-[1.8px] border-brand my-sm max-w-md mx-auto" />
 
 				{/* //? Faq Cards */}
 				<div className="faq_card flex flex-col tabletSm:flex-row gap-5 flex-wrap justify-center">

@@ -50,6 +50,10 @@ const config = {
 				xl: "7.25rem",
 				"2xl": "10rem",
 			},
+			transitionTimingFunction: {
+				"in-expo": "cubic-bezier(0.95, 0.05, 0.795, 0.035)",
+				"out-expo": "cubic-bezier(0.16, 1, 0.3, 1)",
+			},
 		},
 	},
 	plugins: [require("@tailwindcss/container-queries")],
