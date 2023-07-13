@@ -268,12 +268,20 @@ const CtaContent = {
 //! Address Section
 const addressSection = {
 	en: {
-		title: "Our Address",
+		title: (
+			<>
+				Our <span className="text-brand">Address</span>
+			</>
+		),
 		address: {
 			street: "Lotapata Bazar",
 			city: "Kapasia, Gazipur",
 			district: "Dhaka",
 			postNo: "1730",
+		},
+		btn: {
+			name: "Get Chamber location on map",
+			mapLink: "https://goo.gl/maps/odKacTqLjJn36gGG9",
 		},
 	},
 	bn: {

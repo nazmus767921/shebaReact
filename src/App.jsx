@@ -7,6 +7,7 @@ import OfferingSection from "./Components/OfferingSection/OfferingSection";
 import DoctorInfo from "./Components/DoctorInfo/DoctorInfo";
 import FaqSection from "./Components/FaqSection/FaqSection";
 import CtaSection from "./Components/CtaSection/CtaSection";
+import AddressSection from "./Components/AddressSection/AddressSection";
 
 //! context API
 export const LanguageChange = createContext();
@@ -24,12 +25,13 @@ function App() {
 			<div className="pb-xl desktopXs:pb-[10em]">
 				<Nav setBangla={setBangla} isBangla={isBangla} />
 			</div>
-			<Hero />
+			{/* <Hero />
 			<Chamber />
 			<OfferingSection />
 			<DoctorInfo />
 			<FaqSection />
-			<CtaSection />
+			<CtaSection /> */}
+			<AddressSection />
 		</LanguageChange.Provider>
 	);
 }
