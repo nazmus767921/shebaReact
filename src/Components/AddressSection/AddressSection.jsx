@@ -16,10 +16,10 @@ const AddressSection = () => {
 			<div className="container flex flex-col items-center text-center gap-10 tabletSm:gap-lg border-y-[1px]  border-black border-opacity-10 py-lg">
 				<p className="tagLine m-0 -mb-3">{tagLines.hero}</p>
 				<div className="mb-5 tabletSm:mb-0">
-					<h2 className="text-2xl mb-1">
+					<h2 className={`${h} text-2xl mb-1`}>
 						{handleLanguage(bN.title, eN.title)}
 					</h2>
-					<h2 className="text-[2em]">
+					<h2 className={`${h} text-[2em]`}>
 						{handleLanguage(`${bN.address.street}`, `${eN.address.street}`)}
 						{","}{" "}
 						<span className="text-brand">
@@ -31,7 +31,7 @@ const AddressSection = () => {
 					</h2>
 				</div>
 				<Btn
-					className="text-[1.25em]"
+					className={`${h} text-[1.25em]`}
 					name={handleLanguage(
 						addressSection.btn.bn.name,
 						addressSection.btn.en.name

@@ -77,10 +77,10 @@ const DoctorInfo = () => {
 
 				{/* //? content  */}
 				<div className="text-center desktopSm:text-left desktopSm:basis-1/2 grow-0">
-					<h2 className="my-xs">
+					<h2 className={`${h} my-xs`}>
 						{handleLanguage(doctorInfo.bn.title, doctorInfo.en.title)}
 					</h2>
-					<p className="text-justify">
+					<p className={`${p} text-justify`}>
 						{handleLanguage(
 							doctorInfo.bn.description,
 							doctorInfo.en.description
@@ -95,7 +95,7 @@ const DoctorInfo = () => {
 								<img src={doctorInfo.en.phone.icon} alt="" />
 							</div>
 							<div className="">
-								<h3 className="font-bold">
+								<h3 className={`${h} font-bold`}>
 									{handleLanguage(
 										doctorInfo.bn.phone.number,
 										doctorInfo.en.phone.number

@@ -12,7 +12,7 @@ const FaqSection = () => {
 				{/* //? text content */}
 				<div className="text-center">
 					<p>{tagLines[3]}</p>
-					<h2 className="text-[2em]">
+					<h2 className={`${h} text-[2em]`}>
 						{handleLanguage(Faqs.bn.title, Faqs.en.title)}
 					</h2>
 				</div>

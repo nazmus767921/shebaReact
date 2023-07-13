@@ -15,9 +15,9 @@ const Footer = () => {
 						</div>
 					</div>
 					<div>
-						<h3 className="font-[Asar] text-xl">Others</h3>
+						<h3 className={`${p} text-xl`}>Others</h3>
 						<hr className="mb-xs mt-3" />
-						<ul className="flex flex-col gap-7 text-[1.1em] tracking-wide">
+						<ul className={`${base} flex flex-col gap-7 text-[1.1em] tracking-wide`}>
 							{footer.links.map((footer) => (
 								<a key={footer.title} href={footer.link}>
 									<li>{footer.title}</li>
