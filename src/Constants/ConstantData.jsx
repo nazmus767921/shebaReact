@@ -277,11 +277,6 @@ const addressSection = {
 			street: "Lotapata Bazar",
 			city: "Kapasia, Gazipur",
 			district: "Dhaka",
-			postNo: "1730",
-		},
-		btn: {
-			name: "Get Chamber location on map",
-			mapLink: "https://goo.gl/maps/odKacTqLjJn36gGG9",
 		},
 	},
 	bn: {
@@ -290,8 +285,12 @@ const addressSection = {
 			street: "লতাপাতা বাজার",
 			city: " কাপাসিয়া, গাজীপুর,",
 			district: "ঢাকা",
-			postNo: "১৭৩০",
 		},
+	},
+	btn: {
+		en: { name: "Get Chamber location on map" },
+		bn: { name: "Get Chamber location on map" },
+		mapLink: "https://goo.gl/maps/odKacTqLjJn36gGG9",
 	},
 };
 

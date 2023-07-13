@@ -25,12 +25,12 @@ function App() {
 			<div className="pb-xl desktopXs:pb-[10em]">
 				<Nav setBangla={setBangla} isBangla={isBangla} />
 			</div>
-			{/* <Hero />
+			<Hero />
 			<Chamber />
 			<OfferingSection />
 			<DoctorInfo />
 			<FaqSection />
-			<CtaSection /> */}
+			<CtaSection />
 			<AddressSection />
 		</LanguageChange.Provider>
 	);
