@@ -13,7 +13,7 @@ const FloatingCard = (props) => {
 	const [base, h, p] = useContext(fontContext);
 	return (
 		<div
-			className={` ${p} max-w-[8em] text-[1.09em] tabletSm:text-[1.5em] text-center p-2 ${className}`}>
+			className={` ${p} max-w-[8em] text-[1em] tabletSm:text-[1.5em] text-center p-2 ${className}`}>
 			{content}
 		</div>
 	);
