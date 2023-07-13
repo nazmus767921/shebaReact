@@ -27,7 +27,7 @@ function App() {
 		bn: {
 			base: "font-['sutonnyomj']",
 			h: "font-['sutonnyomj']",
-			p: "font-['sutonnyomj'] text-[1.7em]",
+			p: "font-['sutonnyomj'] text-[1.7em] desktopXs:text-[1.8em]",
 		},
 	};
 
