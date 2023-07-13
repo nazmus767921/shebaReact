@@ -14,6 +14,7 @@ import whatsapp from "./social-icon/best-homeopathic-treatment-center-naturopath
 import phoneIco from "./social-icon/best-homeopathic-treatment-center-naturopathic-treatment-phone.svg";
 import ratingStar from "./best-homeopathic-treatment-center-naturopathic-treatment-top-rated.svg";
 import mailIco from "./best-homeopathic-treatment-center-naturopathic-treatment-mail.svg";
+import brandLogoMono from "./best-homeopathic-treatment-center-naturopathic-treatment-dhaka-logo.svg";
 
 //! export
 export {
@@ -32,4 +33,5 @@ export {
 	phoneIco,
 	ratingStar,
 	mailIco,
+	brandLogoMono,
 };
