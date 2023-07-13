@@ -23,8 +23,8 @@ const AddressSection = () => {
 						{","}{" "}
 						<span className="text-brand">
 							{handleLanguage(
-								`${bN.address.city} ${bN.address.district}`,
-								`${eN.address.city} ${eN.address.district}`
+								`${bN.address.city}, ${bN.address.district}`,
+								`${eN.address.city}, ${eN.address.district}`
 							)}
 						</span>
 					</h2>
