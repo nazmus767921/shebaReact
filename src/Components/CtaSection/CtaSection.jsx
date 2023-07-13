@@ -8,7 +8,7 @@ const CtaSection = () => {
 	const handleLanguage = useContext(LanguageChange);
 	const [base, h, p] = useContext(fontContext);
 	return (
-		<section>
+		<section id="ctaSection">
 			<div className="container flex flex-col gap-lg items-center">
 				{/* //? Text Content area */}
 				<div className="text-center flex flex-col gap-xs">

@@ -9,6 +9,7 @@ import FaqSection from "./Components/FaqSection/FaqSection";
 import CtaSection from "./Components/CtaSection/CtaSection";
 import AddressSection from "./Components/AddressSection/AddressSection";
 import Footer from "./Components/Footer/Footer";
+import HandleFont from "./Universal/HandleFont";
 
 //! context API
 export const LanguageChange = createContext();
@@ -51,14 +52,13 @@ function App() {
 	return (
 		<LanguageChange.Provider value={handleLanguage}>
 			<div className={base}>
-				<div className="pb-xl desktopXs:pb-[10em]">
-					<Nav
-						setBangla={setBangla}
-						isBangla={isBangla}
-						setFont={setFont}
-						handleFont={handleFont}
-					/>
-				</div>
+				<div className="pb-xl desktopXs:pb-[10em]"></div>
+				<Nav
+					setBangla={setBangla}
+					isBangla={isBangla}
+					setFont={setFont}
+					handleFont={handleFont}
+				/>
 				<fontContext.Provider value={[base, h, p]}>
 					<Hero />
 					<Chamber />

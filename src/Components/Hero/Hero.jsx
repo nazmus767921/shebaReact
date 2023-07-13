@@ -39,6 +39,7 @@ const Hero = () => {
 						<Btn
 							className="text-xl my-8"
 							name={handleLanguage("যোগাযোগ করুন", "Contact")}
+							link="#ctaSection"
 						/>
 					</div>
 				</div>
