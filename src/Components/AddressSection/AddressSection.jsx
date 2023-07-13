@@ -31,7 +31,7 @@ const AddressSection = () => {
 					</h2>
 				</div>
 				<Btn
-					className={`${h} text-[1.25em]`}
+					className={`${h} text-[1.5em]`}
 					name={handleLanguage(
 						addressSection.btn.bn.name,
 						addressSection.btn.en.name

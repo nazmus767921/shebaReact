@@ -2,12 +2,14 @@
 //! USING ONLY REACT
 
 //! Imports
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { LanguageChange } from "../../App";
 
 //* Readmore function
 export const ReadMore = (props) => {
 	//* props Destructuring
 	const { content, className } = props;
+	const handleLanguage = useContext(LanguageChange);
 
 	//* Default function
 	const [Read, setRead] = useState(true);
@@ -16,7 +18,10 @@ export const ReadMore = (props) => {
 	};
 	return (
 		<>
-			<p className={`${Read && content.length > 200 ? "line-clamp-4" : ""} ${className}`}>
+			<p
+				className={`${
+					Read && content.length > 200 ? "line-clamp-4" : ""
+				} ${className}`}>
 				{content}
 			</p>
 			<button
@@ -26,7 +31,9 @@ export const ReadMore = (props) => {
 						? "flex btn py-1 px-2 text-xl my-6 rounded-md hover:ring-2 hover:ring-black"
 						: "hidden"
 				}>
-				{Read ? "Read more" : "Read less"}
+				{Read
+					? `${handleLanguage("আরও পড়ুন", "Read more")}`
+					: `${handleLanguage("বন্ধ করুন", "Read less")}`}
 			</button>
 		</>
 	);

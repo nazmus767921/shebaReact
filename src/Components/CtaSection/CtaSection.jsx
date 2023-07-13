@@ -30,7 +30,9 @@ const CtaSection = () => {
 				{/* //? contact area  */}
 				<div className="flex flex-col gap-md tabletSm:items-center tabletLg:flex-row tabletLg:justify-center w-full">
 					<div className="flex flex-col gap-xs tabletSm:items-center">
-						<h3 className={`${h} text-brand mx-auto`}>Call us</h3>
+						<h3 className={`${h} text-brand mx-auto`}>
+							{handleLanguage("কল দিন", "Call us")}
+						</h3>
 						<CtaCard
 							icon={phoneIco}
 							content={CtaContent.en.phone[1].num}
@@ -38,7 +40,9 @@ const CtaSection = () => {
 						/>
 					</div>
 					<div className="flex flex-col gap-xs tabletSm:items-center">
-						<h3 className={`${h} text-brand mx-auto`}>Mail at</h3>
+						<h3 className={`${h} text-brand mx-auto`}>
+							{handleLanguage("মেইল করুন", "Mail at")}
+						</h3>
 						<CtaCard icon={mailIco} content={CtaContent.en.email} type="mail" />
 					</div>
 				</div>

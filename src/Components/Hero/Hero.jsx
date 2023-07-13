@@ -36,7 +36,10 @@ const Hero = () => {
 								heroSection.heroContent.en.description
 							)}
 						</p>
-						<Btn className="text-xl my-8" name="Contact" />
+						<Btn
+							className="text-xl my-8"
+							name={handleLanguage("যোগাযোগ করুন", "Contact")}
+						/>
 					</div>
 				</div>
 			</section>

@@ -16,7 +16,7 @@ const CtaCard = (props) => {
 			{/* //? Text area */}
 			<div className="">
 				<h2
-					className={` ${h} ${
+					className={`font-['FreeSans_Bold'] ${
 						type === "number"
 							? "flex-row"
 							: "flex-col-reverse desktopXs:flex-row-reverse"

@@ -52,6 +52,7 @@ const heroSection = {
 			title: (
 				<>
 					<span className="text-brand">হোমিওপ্যাথি ও ন্যাচারোপ্যাথির</span>{" "}
+					<br />
 					{/*//? this line will be in green color.*/}
 					মাধ্যমে প্রাকৃতিকভাবে আপনার <br />
 					স্বাস্থ্য, মন এবং শরীর ফিরে পান <br />
@@ -79,7 +80,13 @@ const chamberInfo = {
 	},
 	bn: {
 		tag: "TREATMENT CENTER",
-		title: "সুস্থ্য হয়ে ওঠার জন্য আপনার নির্ভরযোগ্য প্রতিষ্ঠান",
+		title: (
+			<>
+				সুস্থ্য হয়ে ওঠার জন্য আপনার{" "}
+				<span className=" text-brand text-xl">নির্ভরযোগ্য</span> প্রতিষ্ঠান
+				<br className="inline desktopXs:hidden" />
+			</>
+		),
 		description:
 			"সেবা হোমিও হলে আপনাকে স্বাগতম, আপনার স্বাস্থ্যসেবার নির্ভরযোগ্য এবং প্রাকৃতিক গন্তব্য। জটিল বা দীর্ঘস্থায়ী, যেকোনো ধরনের শারীরিক সমস্যা নিরাময় ও সুস্বাস্থ্যের জন্য সেবা হোমিও হল আপনার সেবায় সর্বদা নিয়োজিত। আমাদের আধুনিক প্রাকৃতিক চিকিৎসার মাধ্যমে অ্যালার্জি, চর্ম, যৌন, মানসিক ব্যাধি, জটিল এবং দীর্ঘস্থায়ী রোগগুলোে বিদায় জানান। সারা দেশে এবং বিদেশে আপনার মতো বিভিন্ন জটিল এবং দীর্ঘস্থায়ী রোগের রোগীদের নিরাময় করার জন্য ( ৯৭% সাফল্যের হার ) সেবা হোমিও হলের খ্যাতি রয়েছে। আমরা প্রাকৃতিকভাবে সুস্থ্যতা লাভে বিশ্বাস করি। প্রাকৃতিক চিকিৎসায় সুস্থ্য জীবন।",
 	},
@@ -93,7 +100,7 @@ const offeringsMedicine = {
 				We give you best possible treatment and provide you
 				<span className="text-brand">
 					{" "}
-					<br className="tabletSm:hidden" />
+					<br />
 					<span className="text-[1.75em]">100%</span>
 					<br className="tabletSm:hidden inline" /> Authentic medicine
 				</span>{" "}
@@ -104,8 +111,20 @@ const offeringsMedicine = {
 			"We also have the best medicines from Switzerland, India, and Pakistan. And Sometimes we use our domestic [Made in Bangladesh medicines] and local best medicines according to your demand. We deliver only the best to you and your health.",
 	},
 	bn: {
-		title:
-			"আপনার সর্বোত্তম চিকিৎসা নিশ্চিত করতে, আমরা জার্মানি উৎপাদিত ১০০% আসল ওষুধ সরবরাহ করি।",
+		title: (
+			<>
+				আপনার সর্বোত্তম চিকিৎসা নিশ্চিত করতে,
+				<span className="text-brand">
+					{" "}
+					<br />
+					<span className="text-[1.75em] tabletSm:text-[1.4em]">
+						আমরা জার্মানি উৎপাদিত <br className="desktopMd::hidden" /> ১০০% আসল
+					</span>
+					<br className="tabletSm:hidden" />
+				</span>{" "}
+				ওষুধ সরবরাহ করি।
+			</>
+		),
 		description:
 			"আমাদের কাছে সুইজারল্যান্ড, ইন্ডিয়া, এবং পাকিস্তানের সেরা ঔষধ গুলোও পাওয়া যায়। তাছাড়াও, আমরা রোগীদের চাহিদা অনুযায়ী দেশীয় ঔষধ গুলোও ব্যবহার করে থাকি। আপনার সুস্বাস্থ্যের জন্য আমরা শুধুমাত্র সেরাটাই সর্বরাহ করার চেষ্টা করি।",
 	},
@@ -123,7 +142,14 @@ const offeringsPitch = {
 		),
 	},
 	bn: {
-		title: "৫টি কারনে চিকিৎসার জন্য সেবা হোমিও হল হতে পারে আপনার প্রথম পছন্দ",
+		title: (
+			<>
+				৫টি কারনে চিকিৎসার জন্য
+				<br />
+				<span className="text-brand">সেবা হোমিও হল</span>
+				<br /> হতে পারে আপনার প্রথম পছন্দ
+			</>
+		),
 	},
 	list: [
 		{
@@ -178,8 +204,14 @@ const doctorInfo = {
 		},
 	},
 	bn: {
-		title:
-			"একজন বন্ধুত্বসুলভ ডাক্তার যে আপনার সমস্ত স্বাস্থ্য সম্পর্কিত সমস্যা শুনবে এবং সমাধান করবে",
+		title: (
+			<>
+				<span className="text-brand text-[1.4em]">
+					একজন বন্ধুত্বসুলভ ডাক্তার
+				</span>
+				<br /> যে আপনার সমস্ত স্বাস্থ্য সম্পর্কিত সমস্যা শুনবে এবং সমাধান করবে
+			</>
+		),
 		description:
 			"ডাঃ জহিরুল ইসলাম, বিএইচএমসি (বাংলাদেশ হোমিওপ্যাথিক মেডিকেল কলেজ) এর থেকে সনদপ্রাপ্ত একজন অত্যন্ত দক্ষ এবং অভিজ্ঞ ডাক্তার। প্রায় ২৫ হাজার+ রোগী তার সেবা নিয়ে সুস্থ্য হয়েছেন। এই সেবায় তার ২২ বছরের অভিজ্ঞতা আপনার সর্বোচ্চ চিকিৎসা সেবা নিশ্চিত করবে।",
 		shortInfo: {
@@ -289,7 +321,7 @@ const addressSection = {
 	},
 	btn: {
 		en: { name: "Get Chamber location on map" },
-		bn: { name: "Get Chamber location on map" },
+		bn: { name: "ম্যাপে চেম্বারের লোকশন দেখুন" },
 		mapLink: "https://goo.gl/maps/odKacTqLjJn36gGG9",
 	},
 };
