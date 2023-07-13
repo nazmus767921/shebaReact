@@ -7,7 +7,7 @@ import { useState } from "react";
 //* Readmore function
 export const ReadMore = (props) => {
 	//* props Destructuring
-	const { content } = props;
+	const { content, className } = props;
 
 	//* Default function
 	const [Read, setRead] = useState(true);
@@ -16,7 +16,7 @@ export const ReadMore = (props) => {
 	};
 	return (
 		<>
-			<p className={Read && content.length > 200 ? "line-clamp-4" : ""}>
+			<p className={`${Read && content.length > 200 ? "line-clamp-4" : ""} ${className}`}>
 				{content}
 			</p>
 			<button

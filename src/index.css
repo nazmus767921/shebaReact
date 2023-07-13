@@ -8,7 +8,7 @@
 	body {
 		@apply text-[12.8px] desktopXl:text-[0.8333333333333334vw] desktop2xl:text-[16px];
 		@apply m-0;
-		@apply font-['FreeSans_Medium'];
+		/* @apply font-['FreeSans_Medium']; */
 	}
 
 	section {
@@ -20,11 +20,11 @@
 	}
 
 	h1 {
-		@apply font-['FreeSans_Bold'] text-2xl capitalize desktopMd:text-3xl leading-normal;
+		@apply text-2xl capitalize desktopMd:text-3xl leading-normal;
 	}
 
 	h2 {
-		@apply font-['FreeSans_Bold'] text-[2.5em] desktopMd:text-2xl leading-normal;
+		@apply text-[2.5em] desktopMd:text-2xl leading-normal;
 	}
 
 	h3 {
@@ -33,7 +33,6 @@
 	}
 
 	p {
-		@apply font-['asar'];
 		@apply text-xl;
 		@apply leading-loose;
 	}

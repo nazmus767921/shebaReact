@@ -1,7 +1,10 @@
+import { useContext } from "react";
+import { fontContext } from "../../App";
 import { footer } from "../../Constants/ConstantData";
 import { brandLogoMono } from "../../assets/Images/Img";
 
 const Footer = () => {
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<section>
 			<div className="container flex flex-col gap-lg">

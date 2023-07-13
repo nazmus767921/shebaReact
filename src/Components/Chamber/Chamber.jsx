@@ -13,11 +13,12 @@ import {
 
 //? Function Imports
 import { ReadMore } from "../Readmore/Readmore";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 
 //! Default Function
 const Chamber = () => {
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<>
 			<section>
@@ -42,11 +43,12 @@ const Chamber = () => {
 						<p className="tagLine tracking-[.75em] text-brand text-sm flex w-fit mx-auto font-bold mb-10">
 							{handleLanguage(chamberInfo.bn.tag, chamberInfo.en.tag)}
 						</p>
-						<h2>
+						<h2 className={h}>
 							{handleLanguage(chamberInfo.bn.title, chamberInfo.en.title)}
 						</h2>
 						<div className="horizontal_line w-1/3 my-xs"></div>
 						<ReadMore
+							className={p}
 							content={handleLanguage(
 								chamberInfo.bn.description,
 								chamberInfo.en.description

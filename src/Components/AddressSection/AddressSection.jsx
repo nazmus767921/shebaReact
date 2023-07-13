@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { addressSection, tagLines } from "../../Constants/ConstantData";
 import { Btn } from "../Button/Btn";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 
 const AddressSection = () => {
 	const eN = addressSection.en;
@@ -9,6 +9,7 @@ const AddressSection = () => {
 
 	//? context API
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 
 	return (
 		<section>

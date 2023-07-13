@@ -1,6 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { useContext } from "react";
+import { fontContext } from "../../App";
+
 const CtaCard = (props) => {
+	const [base, h, p] = useContext(fontContext);
 	const { icon, content, type } = props;
 	return (
 		<div

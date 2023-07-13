@@ -283,7 +283,7 @@ const addressSection = {
 		title: "আমাদের ঠিকানা",
 		address: {
 			street: "লতাপাতা বাজার",
-			city: " কাপাসিয়া, গাজীপুর,",
+			city: " কাপাসিয়া, গাজীপুর",
 			district: "ঢাকা",
 		},
 	},

@@ -1,10 +1,11 @@
 import { useContext } from "react";
 import { Faqs, tagLines } from "../../Constants/ConstantData";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 import FaqCard from "../FaqCard/FaqCard";
 
 const FaqSection = () => {
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<section>
 			<div className="container">

@@ -4,13 +4,14 @@ import { useContext } from "react";
 import { heroSection, tagLines } from "../../Constants/ConstantData";
 import { heroLeaf } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 
 //! Default Function
 const Hero = () => {
 	//! Props destructuring
 	const handleLanguage = useContext(LanguageChange);
-
+	//? Contex Api
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<>
 			<section>
@@ -23,13 +24,13 @@ const Hero = () => {
 							/>
 						</div>
 						<p className="tagLine">{tagLines.hero}</p>
-						<h1 className="mb-4">
+						<h1 className={`mb-4 ${h}`}>
 							{handleLanguage(
 								heroSection.heroContent.bn.title,
 								heroSection.heroContent.en.title
 							)}
 						</h1>
-						<p>
+						<p className={p}>
 							{handleLanguage(
 								heroSection.heroContent.bn.description,
 								heroSection.heroContent.en.description

@@ -6,11 +6,12 @@ import { Times, brandLogo, hamBurger } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
 
 const Nav = (props) => {
-	const { setBangla, isBangla } = props;
+	const { setBangla, isBangla, handleFont } = props;
 	const [isOpen, setOpen] = useState(false);
+
 	return (
 		<>
-			<nav className="fixed w-full top-0 bg-white z-[1000]">
+			<nav className="fixed w-full top-0 bg-white z-[1000] font-['FreeSans_Medium']">
 				{/*  //! logo */}
 				<div className="container flex justify-between items-center py-5">
 					<div className="nav_logo w-[12em] flex justify-center items-center">
@@ -44,7 +45,10 @@ const Nav = (props) => {
 							))}
 							<div
 								className="px-12 pt-12 text-xl"
-								onClick={() => setBangla((prev) => !prev)}>
+								onClick={() => {
+									setBangla((prev) => !prev);
+									handleFont();
+								}}>
 								<Btn name={`Change to ${isBangla ? "English" : "Bangla"}`} />
 							</div>
 						</div>
@@ -60,10 +64,13 @@ const Nav = (props) => {
 									<a href={links.link}>{links.linkText}</a>
 								</li>
 							))}
-							<div onClick={() => setBangla((prev) => !prev)}>
+							<div
+								onClick={() => {
+									setBangla((prev) => !prev);
+									handleFont();
+								}}>
 								<Btn name={`Change to ${isBangla ? "English" : "Bangla"}`} />
 							</div>
-							{/* <Btn name={`Change to ${isBangla ? "Bangla" : "English"}`} /> */}
 						</ul>
 					</div>
 				</div>

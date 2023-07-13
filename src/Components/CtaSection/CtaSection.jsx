@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import { CtaContent } from "../../Constants/ConstantData";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 import CtaCard from "./CtaCard";
 import { mailIco, phoneIco } from "../../assets/Images/Img";
 
 const CtaSection = () => {
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<section>
 			<div className="container flex flex-col gap-lg items-center">

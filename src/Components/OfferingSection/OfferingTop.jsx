@@ -3,13 +3,14 @@
 import { offeringsMedicine, tagLines } from "../../Constants/ConstantData";
 //? context imports
 import { useContext } from "react";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 //? images imports
 import { bottle } from "../../assets/Images/Img";
 
 const OfferingTop = () => {
 	//! context api
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<section>
 			<div className="container">
@@ -18,10 +19,10 @@ const OfferingTop = () => {
 						<img src={bottle} alt="" />
 					</div>
 					<div className="text-center tabletLg:basis-1/2 tabletLg:flex-grow-0 tabletLg:text-left">
-						<p className="tagLine mb-xs">
+						<p className={`tagLine mb-xs`}>
 							{handleLanguage(tagLines[2], tagLines[2])}
 						</p>
-						<h2 className="mb-xs">
+						<h2 className={`${h} mb-xs`}>
 							{handleLanguage(
 								offeringsMedicine.bn.title,
 								offeringsMedicine.en.title
@@ -30,7 +31,7 @@ const OfferingTop = () => {
 					</div>
 				</div>
 				<div className="">
-					<p className="text-justify tabletLg:text-center">
+					<p className={`${p} text-justify tabletLg:text-center`}>
 						{handleLanguage(
 							offeringsMedicine.bn.description,
 							offeringsMedicine.en.description

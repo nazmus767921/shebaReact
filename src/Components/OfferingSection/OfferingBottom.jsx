@@ -5,11 +5,12 @@ import { Offerings } from "../../assets/Images/Img";
 import { offeringsPitch, tagLines } from "../../Constants/ConstantData";
 
 //?context imports
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 
 const OfferingBottom = () => {
 	//! Context API
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<section>
 			<div className="container desktopXs:flex desktopXs:items-center desktopXs:flex-row-reverse">
@@ -20,14 +21,14 @@ const OfferingBottom = () => {
 				</div>
 				<div className="text-center desktopXs:text-left desktopXs:basis-1/2 desktopXs:shrink-0">
 					<p className="tagLine">{handleLanguage(tagLines[3], tagLines[3])}</p>
-					<h2>
+					<h2 className={h}>
 						{handleLanguage(offeringsPitch.bn.title, offeringsPitch.en.title)}
 					</h2>
 					<ul>
 						{offeringsPitch.list.map((list) => (
 							<li
 								key={list.id}
-								className="text-xl font-[Asar] bg-[#f2fff5] my-[.75em] p-[.75em]">
+								className={`${p} bg-[#f2fff5] my-[.75em] p-[.75em]`}>
 								{handleLanguage(list.bn, list.en)}
 							</li>
 						))}

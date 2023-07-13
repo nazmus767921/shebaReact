@@ -2,7 +2,7 @@
 
 //! Imports Here
 import { useContext } from "react";
-import { LanguageChange } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 import { doctorProfileImg, ratingStar } from "../../assets/Images/Img";
 import { doctorInfo } from "../../Constants/ConstantData";
 
@@ -10,9 +10,10 @@ import { doctorInfo } from "../../Constants/ConstantData";
 //* floatingCard Component
 const FloatingCard = (props) => {
 	const { className, content } = props;
+	const [base, h, p] = useContext(fontContext);
 	return (
 		<div
-			className={`max-w-[8em] tabletSm:text-xl text-md text-center font-[Asar] p-2 ${className}`}>
+			className={` ${p} max-w-[8em] text-[1.09em] tabletSm:text-[1.5em] text-center p-2 ${className}`}>
 			{content}
 		</div>
 	);
@@ -46,6 +47,7 @@ const RatingCard = (props) => {
 //! Deafult Function
 const DoctorInfo = () => {
 	const handleLanguage = useContext(LanguageChange);
+	const [base, h, p] = useContext(fontContext);
 
 	return (
 		<section>
@@ -61,7 +63,7 @@ const DoctorInfo = () => {
 						)}
 					/>
 					<FloatingCard
-						className="bg-[#fff6ec] rounded-md absolute -right-[22%] -bottom-[12%] py-4 px-1.5"
+						className={`bg-[#fff6ec] rounded-md absolute -right-[22%] -bottom-[12%] py-4 px-1.5`}
 						content={handleLanguage(
 							doctorInfo.bn.shortInfo[2],
 							doctorInfo.en.shortInfo[2]
