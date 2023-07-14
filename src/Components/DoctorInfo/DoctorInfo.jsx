@@ -2,18 +2,23 @@
 
 //! Imports Here
 import { useContext } from "react";
-import { LanguageChange, fontContext } from "../../App";
+import { Banglacontext, LanguageChange, fontContext } from "../../App";
 import { doctorProfileImg, ratingStar } from "../../assets/Images/Img";
 import { doctorInfo } from "../../Constants/ConstantData";
 
-//! Custom Componetn Functions
+//! Custom Components Functions
 //* floatingCard Component
-const FloatingCard = (props) => {
-	const { className, content } = props;
+const FloatingCard = ({ className, content }) => {
+	//* contexts
 	const [base, h, p] = useContext(fontContext);
+	const isBangla = useContext(Banglacontext);
 	return (
 		<div
-			className={` ${p} max-w-[8em] text-[1em] tabletSm:text-[1.5em] text-center p-2 ${className}`}>
+			className={` ${p} max-w-[8em] ${
+				isBangla
+					? "text-[1.39em]"
+					: "text-[1em]"
+			} tabletSm:text-[1.5em] text-center p-2 ${className}`}>
 			{content}
 		</div>
 	);

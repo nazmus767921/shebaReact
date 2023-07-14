@@ -9,11 +9,11 @@ import FaqSection from "./Components/FaqSection/FaqSection";
 import CtaSection from "./Components/CtaSection/CtaSection";
 import AddressSection from "./Components/AddressSection/AddressSection";
 import Footer from "./Components/Footer/Footer";
-import HandleFont from "./Universal/HandleFont";
 
 //! context API
 export const LanguageChange = createContext();
 export const fontContext = createContext();
+export const Banglacontext = createContext();
 
 //! default function
 function App() {
@@ -63,7 +63,9 @@ function App() {
 					<Hero />
 					<Chamber />
 					<OfferingSection />
-					<DoctorInfo />
+					<Banglacontext.Provider value={isBangla}>
+						<DoctorInfo />
+					</Banglacontext.Provider>
 					<FaqSection />
 					<CtaSection />
 					<AddressSection />
