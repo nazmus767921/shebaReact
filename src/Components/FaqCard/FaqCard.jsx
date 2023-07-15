@@ -1,11 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../App";
 import { Faqs } from "../../Constants/ConstantData";
 
-const FaqCardComponet = (props) => {
+const FaqCardComponet = ({ id, question, answer }) => {
+	//? contexts
 	const [base, h, p] = useContext(fontContext);
-	const { id, question, answer } = props;
+
 	return (
 		<div
 			key={id}
@@ -18,8 +19,9 @@ const FaqCardComponet = (props) => {
 	);
 };
 
-const faqContent = Faqs.en.faq;
 const FaqCard = () => {
+	const handleLanguage = useContext(LanguageChange);
+	const faqContent = handleLanguage(Faqs.bn.faq, Faqs.en.faq);
 	return faqContent.map((faqData) => {
 		const { question, answer, id } = faqData;
 		return (
