@@ -17,7 +17,8 @@ const Footer = () => {
 					<div>
 						<h3 className={`${p} text-xl`}>Others</h3>
 						<hr className="mb-xs mt-3" />
-						<ul className={`${base} flex flex-col gap-7 text-[1.1em] tracking-wide`}>
+						<ul
+							className={`font-['FreeSans_Medium'] flex flex-col gap-7 text-[1.1em] tracking-wide`}>
 							{footer.links.map((footer) => (
 								<a key={footer.title} href={footer.link}>
 									<li>{footer.title}</li>
@@ -27,7 +28,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="mx-auto text-center">
-					<small className="">{footer.copyright}</small>
+					<small className="font-['FreeSans_Medium']">{footer.copyright}</small>
 				</div>
 			</div>
 		</section>
