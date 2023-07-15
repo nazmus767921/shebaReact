@@ -9,6 +9,7 @@ import FaqSection from "./Components/FaqSection/FaqSection";
 import CtaSection from "./Components/CtaSection/CtaSection";
 import AddressSection from "./Components/AddressSection/AddressSection";
 import Footer from "./Components/Footer/Footer";
+import FaqCard from "./Components/FaqCard/FaqCard";
 
 //! context API
 export const LanguageChange = createContext();
@@ -66,7 +67,9 @@ function App() {
 					<Banglacontext.Provider value={isBangla}>
 						<DoctorInfo />
 					</Banglacontext.Provider>
-					<FaqSection />
+					<FaqSection>
+						<FaqCard />
+					</FaqSection>
 					<CtaSection />
 					<AddressSection />
 					<Footer />

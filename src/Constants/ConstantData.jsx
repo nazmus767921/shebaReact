@@ -12,17 +12,17 @@ const navLinks = [
 	{
 		id: 2,
 		linkText: "About us",
-		link: "#",
+		link: "#AboutUS",
 	},
 	{
 		id: 3,
 		linkText: "Faqs",
-		link: "#",
+		link: "#FAQ",
 	},
 	{
 		id: 4,
 		linkText: "Our Address",
-		link: "#",
+		link: "#Address",
 	},
 ];
 

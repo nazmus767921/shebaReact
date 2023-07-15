@@ -21,7 +21,7 @@ const Chamber = () => {
 	const [base, h, p] = useContext(fontContext);
 	return (
 		<>
-			<section>
+			<section id='AboutUS'>
 				<div className="container w-full flex flex-col desktopXs:flex-row desktopXs:items-center">
 					{/* IMAGE */}
 					<div className="w-full desktopXs:mx-md desktopXs:flex-shrink desktopXs:-ml-[100px]">

@@ -12,7 +12,7 @@ const AddressSection = () => {
 	const [base, h, p] = useContext(fontContext);
 
 	return (
-		<section>
+		<section id="Address">
 			<div className="container flex flex-col items-center text-center gap-10 tabletSm:gap-lg border-y-[1px]  border-black border-opacity-10 py-lg">
 				<p className="tagLine m-0 -mb-3">{tagLines.hero}</p>
 				<div className="mb-5 tabletSm:mb-0">

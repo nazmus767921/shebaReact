@@ -3,11 +3,11 @@ import { Faqs, tagLines } from "../../Constants/ConstantData";
 import { LanguageChange, fontContext } from "../../App";
 import FaqCard from "../FaqCard/FaqCard";
 
-const FaqSection = () => {
+const FaqSection = ({ children }) => {
 	const handleLanguage = useContext(LanguageChange);
 	const [base, h, p] = useContext(fontContext);
 	return (
-		<section>
+		<section id="FAQ">
 			<div className="container">
 				{/* //? text content */}
 				<div className="text-center">
@@ -22,7 +22,8 @@ const FaqSection = () => {
 
 				{/* //? Faq Cards */}
 				<div className="faq_card flex flex-col tabletSm:flex-row gap-5 flex-wrap justify-center">
-					<FaqCard />
+					{/* <FaqCard /> */}
+					{children}
 				</div>
 			</div>
 		</section>
