@@ -343,6 +343,7 @@ const addressSection = {
 			city: "Kapasia, Gazipur",
 			district: "Dhaka",
 		},
+		note: "We don't have any brances. Our only Chamber is located here.",
 	},
 	bn: {
 		title: "আমাদের ঠিকানা",
@@ -351,6 +352,7 @@ const addressSection = {
 			city: " কাপাসিয়া, গাজীপুর",
 			district: "ঢাকা",
 		},
+		note: "সারা দেশে আমাদের অন্য কোনো শাখা বা ব্রাঞ্চ নেই। আমাদের একমাত্র চেম্বার এখানে অবস্থিত।",
 	},
 	btn: {
 		en: { name: "Get Chamber location on map" },

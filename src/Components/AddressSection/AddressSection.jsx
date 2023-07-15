@@ -29,6 +29,9 @@ const AddressSection = () => {
 							)}
 						</span>
 					</h2>
+					<p className={`${p} font-bold mt-sm leading-5`}>
+						{`" ${handleLanguage(`${bN.note}`, `${eN.note}`)} "`}
+					</p>
 				</div>
 				<Btn
 					className={`${h} text-[1.5em]`}
