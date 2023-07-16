@@ -11,7 +11,7 @@ import AddressSection from "./Components/AddressSection/AddressSection";
 import Footer from "./Components/Footer/Footer";
 import FaqCard from "./Components/FaqCard/FaqCard";
 
-//! context API
+//! context API 
 export const LanguageChange = createContext();
 export const fontContext = createContext();
 export const Banglacontext = createContext();
