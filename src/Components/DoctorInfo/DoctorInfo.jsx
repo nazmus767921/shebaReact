@@ -2,7 +2,7 @@
 
 //! Imports Here
 import { useContext } from "react";
-import { Banglacontext, LanguageChange, fontContext } from "../../App";
+import { Banglacontext, LanguageChange, fontContext } from "../../ContextAPI";
 import { doctorProfileImg, ratingStar } from "../../assets/Images/Img";
 import { doctorInfo } from "../../Constants/ConstantData";
 

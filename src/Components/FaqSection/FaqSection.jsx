@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { Faqs, tagLines } from "../../Constants/ConstantData";
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 import FaqCard from "../FaqCard/FaqCard";
 
 const FaqSection = ({ children }) => {

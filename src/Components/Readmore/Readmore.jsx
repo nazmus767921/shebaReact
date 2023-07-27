@@ -3,7 +3,7 @@
 
 //! Imports
 import { useContext, useState } from "react";
-import { LanguageChange } from "../../App";
+import { LanguageChange } from "../../ContextAPI";
 
 //* Readmore function
 export const ReadMore = (props) => {

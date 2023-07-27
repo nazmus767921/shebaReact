@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { fontContext } from "../../App";
+import { fontContext } from "../../ContextAPI";
 import { footer } from "../../Constants/ConstantData";
 import { brandLogoMono } from "../../assets/Images/Img";
 

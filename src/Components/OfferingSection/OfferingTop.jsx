@@ -3,7 +3,7 @@
 import { offeringsMedicine, tagLines } from "../../Constants/ConstantData";
 //? context imports
 import { useContext } from "react";
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 //? images imports
 import { bottle } from "../../assets/Images/Img";
 

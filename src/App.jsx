@@ -1,5 +1,5 @@
 //! Imports
-import { createContext, useState } from "react";
+import { useState } from "react";
 import Hero from "./Components/Hero/Hero";
 import Nav from "./Components/Nav/Nav";
 import Chamber from "./Components/Chamber/Chamber";
@@ -10,15 +10,11 @@ import CtaSection from "./Components/CtaSection/CtaSection";
 import AddressSection from "./Components/AddressSection/AddressSection";
 import Footer from "./Components/Footer/Footer";
 import FaqCard from "./Components/FaqCard/FaqCard";
-
-//! context API 
-export const LanguageChange = createContext();
-export const fontContext = createContext();
-export const Banglacontext = createContext();
+import { LanguageChange, fontContext, Banglacontext } from "./ContextAPI";
 
 //! default function
 function App() {
-	//! font setting
+	//* font setting
 	//? change the font setting here
 	const changeFont = {
 		en: {

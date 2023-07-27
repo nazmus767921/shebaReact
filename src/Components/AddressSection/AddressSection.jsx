@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { addressSection, tagLines } from "../../Constants/ConstantData";
 import { Btn } from "../Button/Btn";
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 
 const AddressSection = () => {
 	const eN = addressSection.en;

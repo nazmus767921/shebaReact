@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 import { Faqs } from "../../Constants/ConstantData";
 
 const FaqCardComponet = ({ id, question, answer }) => {

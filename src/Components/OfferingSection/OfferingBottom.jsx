@@ -5,7 +5,7 @@ import { Offerings } from "../../assets/Images/Img";
 import { offeringsPitch, tagLines } from "../../Constants/ConstantData";
 
 //?context imports
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 
 const OfferingBottom = () => {
 	//! Context API
@@ -28,7 +28,8 @@ const OfferingBottom = () => {
 						{offeringsPitch.list.map((list) => (
 							<li
 								key={list.id}
-								className={`${p} bg-[#f2fff5] my-[.75em] p-[.75em]`}>
+								className={`${p} bg-[#f2fff5] my-[.75em] p-[.75em]`}
+							>
 								{handleLanguage(list.bn, list.en)}
 							</li>
 						))}

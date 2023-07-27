@@ -13,7 +13,7 @@ import {
 
 //? Function Imports
 import { ReadMore } from "../Readmore/Readmore";
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 
 //! Default Function
 const Chamber = () => {
@@ -21,7 +21,7 @@ const Chamber = () => {
 	const [base, h, p] = useContext(fontContext);
 	return (
 		<>
-			<section id='AboutUS'>
+			<section id="AboutUS">
 				<div className="container w-full flex flex-col desktopXs:flex-row desktopXs:items-center">
 					{/* IMAGE */}
 					<div className="w-full desktopXs:mx-md desktopXs:flex-shrink desktopXs:-ml-[100px]">

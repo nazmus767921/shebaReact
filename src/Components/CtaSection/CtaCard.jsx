@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 
 import { useContext } from "react";
-import { fontContext } from "../../App";
+import { CtaTelPopUpContext, fontContext } from "../../ContextAPI";
 
 const CtaCard = (props) => {
+	const handleShow = useContext(CtaTelPopUpContext);
 	const [base, h, p] = useContext(fontContext);
 	const { icon, content, type } = props;
 	return (
@@ -12,7 +13,8 @@ const CtaCard = (props) => {
 				type === "number"
 					? "flex-row py-4"
 					: "flex-col desktopXs:flex-row text-center gap-xs py-xs"
-			} flex gap-7 justify-between items-center px-xs bg-white shadow-[2px_-2px_30px_0_rgba(145,145,145,.15)] rounded-md transition-all`}>
+			} flex gap-7 justify-between items-center px-xs bg-white shadow-[2px_-2px_30px_0_rgba(145,145,145,.15)] rounded-md transition-all`}
+		>
 			{/* //? Text area */}
 			<div className="">
 				<h2
@@ -20,7 +22,8 @@ const CtaCard = (props) => {
 						type === "number"
 							? "flex-row"
 							: "flex-col-reverse desktopXs:flex-row-reverse"
-					} flex flex-wrap text-[1.7em]`}>
+					} flex flex-wrap text-[1.7em]`}
+				>
 					<span className="text-brand">
 						{type === "number" ? "+88" : " @gmail.com"}
 					</span>
@@ -30,14 +33,23 @@ const CtaCard = (props) => {
 
 			{/* //? Icon area */}
 			<div className="cta_card--btn">
-				<a
-					href={`${type === "number" ? "tel:" : "mailto:"}${content}${
-						type === "number" ? "" : "@gmail.com"
-					}`}>
-					<div className="w-[3.5em] hover:scale-125 transition-transform ease-out-expo duration-500">
-						<img src={icon} alt="sheba-homeo-hall-call" />
-					</div>
-				</a>
+				<button onClick={handleShow}>
+					{type === "mail" ? (
+						<a
+							href={`${type === "mail" && "mailto:"}${content}${
+								type === "mail" && "@gmail.com"
+							}`}
+						>
+							<div className="w-[3.5em] hover:scale-125 transition-transform ease-out-expo duration-500">
+								<img src={icon} alt="sheba-homeo-hall-call" />
+							</div>
+						</a>
+					) : (
+						<div className="w-[3.5em] hover:scale-125 transition-transform ease-out-expo duration-500">
+							<img src={icon} alt="sheba-homeo-hall-call" />
+						</div>
+					)}
+				</button>
 			</div>
 		</div>
 	);

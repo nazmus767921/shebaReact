@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { heroSection, tagLines } from "../../Constants/ConstantData";
 import { heroLeaf } from "../../assets/Images/Img";
 import { Btn } from "../Button/Btn";
-import { LanguageChange, fontContext } from "../../App";
+import { LanguageChange, fontContext } from "../../ContextAPI";
 
 //! Default Function
 const Hero = () => {
